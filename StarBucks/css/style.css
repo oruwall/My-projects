@@ -10,6 +10,7 @@ a {
 body {
   background-color: #f3f1e3;
   font-family: "Montserrat", sans-serif;
+  min-width: 1286px;
 }
 html {
   scroll-behavior: smooth;
@@ -19,6 +20,10 @@ html {
   max-width: 99vw;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+.first-page {
+  position: relative;
+  width: 1920px;
 }
 .page-wrapper {
   max-width: 1300px;
@@ -381,30 +386,4 @@ html {
   width: 17px;
   height: 18px;
   right: 153px;
-}
-.page-wrapper-wide.bottom {
-  background: #170805;
-  padding: 0;
-  margin: 0;
-}
-.footer-bottom {
-  display: flex;
-}
-.footer-bottom .ftcenter {
-  margin: 0 auto;
-  width: 198px;
-  height: 20px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(232, 229, 212, 0.85);
-  margin-left: 880px;
-}
-.footer-bottom .ftright {
-  width: 198px;
-  height: 20px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(232, 229, 212, 0.4);
 }
