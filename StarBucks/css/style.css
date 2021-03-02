@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: blue;
+  text-decoration: none;
+}
+body {
+  background-color: #f3f1e3;
+  font-family: "Montserrat", sans-serif;
+}
+.first-page {
+  position: relative;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.header {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.logo-wrapper {
+  margin-top: 65px;
+}
+.nave {
+  margin-top: 65px;
+  display: flex;
+  z-index: 1;
+}
+.nav {
+  list-style: none;
+  display: flex;
+  margin-right: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+.nav.active {
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-wrapper {
+  display: flex;
+  right: 0;
+  z-index: 3;
+}
+.cup img {
+  position: absolute;
+  z-index: -10;
+  right: 0;
+  top: 0;
+  width: 1050px;
+  height: 933px;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 210px;
+}
+.about .mini-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.12em;
+
+  color: #4f403f;
+}
+.about .title {
+  margin-top: 35px;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #170805;
+}
+.about .subtitle {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 60px;
+  letter-spacing: -0.005em;
+  text-transform: uppercase;
+
+  color: #170805;
+}
+.about .subtitle span {
+  color: #ffffff;
+}
+.about .btn {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 276px;
+  height: 60px;
+  background: #448b6d;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.about .btn:hover {
+  background: transparent;
+  border: 2px solid #448b6d;
+  box-shadow: 0px 0px 0px rgba(68, 139, 109, 0.5);
+  box-sizing: border-box;
+  border-radius: 10px;
+  color: #170805;
+  transition: all 0.3s ease;
+}
+.scroll {
+  display: flex;
+  flex-direction: row;
+  margin-top: 340px;
+  width: 141px;
+  height: 42px;
+}
+.scroll img {
+  width: 16.5px;
+  height: 42px;
+  margin-right: 11.5px;
+}
