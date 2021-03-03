@@ -229,6 +229,9 @@ html {
   background-color: #fff;
   padding-bottom: 100px;
 }
+.ice-blended {
+  position: relative;
+}
 .ice-blended .title {
   padding-top: 100px;
   display: flex;
@@ -254,7 +257,7 @@ html {
   padding-left: 60px;
   cursor: pointer;
 }
-.content {
+/* .content {
   display: flex;
   justify-content: center;
 }
@@ -277,10 +280,49 @@ html {
 }
 .cont.active .name {
   color: #170805;
+} */
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+.content .cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 317px;
+  height: 607px;
+  outline: none;
+  transition: all 0.4s ease;
+}
+.content .cont img {
+  width: 172px;
+  height: 325px;
+}
+.content .slick-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 317px;
+  height: 607px;
+  background: #e8e5d4;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  outline: none;
+}
+.content .slick-center img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
 }
 .new {
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 51px;
@@ -293,6 +335,10 @@ html {
   font-size: 15px;
   line-height: 20px;
   color: #ffffff;
+  transition: all 0.5s ease;
+}
+.content .slick-center .new {
+  display: flex;
 }
 .cont .name {
   margin-top: 20px;
@@ -302,7 +348,10 @@ html {
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: rgba(23, 8, 5, 0.8);
+  color: #4f403f;
+}
+.slick-center .name {
+  color: rgba(23, 8, 5, 1);
 }
 .cont .price {
   margin-top: 16px;
@@ -310,10 +359,12 @@ html {
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: rgba(23, 8, 5, 0.8);
 }
-.cont .btn {
+.content .slick-center .btn {
   display: flex;
+}
+.btn {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 170px;
@@ -327,7 +378,7 @@ html {
   color: #ffffff;
   transition: all 0.3s ease;
 }
-.cont .btn:hover {
+.content .slick-center .btn:hover {
   background: transparent;
   border: 2px solid #448b6d;
   box-sizing: border-box;
@@ -335,6 +386,14 @@ html {
   color: #448b6d;
   transition: all 0.3s ease;
 }
+.slick-arrow {
+  position: absolute;
+  top: 60%;
+}
+.arrow_next {
+  right: 0;
+}
+
 .four-page {
   background: #170805;
 }
