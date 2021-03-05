@@ -238,7 +238,6 @@ header a {
   }
   .menu-open {
     display: block;
-    nav-down: auto;
   }
   .offer h1 {
     line-height: 1em;
