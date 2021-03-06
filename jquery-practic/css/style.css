@@ -232,6 +232,7 @@ section {
 .card {
   padding: 81px 28px 45px;
   margin-bottom: 65px;
+  cursor: pointer;
 }
 
 .card__img {
