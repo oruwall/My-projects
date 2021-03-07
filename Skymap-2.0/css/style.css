@@ -97,12 +97,31 @@ body {
   background-color: #448b6d;
   transition: all 0.3s ease;
 }
-.content {
+.header_bar a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.header_bar .svg path {
+  stroke: #fff;
+  transition: all 0.3s ease;
+}
+.container .content2 {
   position: relative;
-  background: url("../img/nice-cup.png") top right 0 / 56% no-repeat;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.content__left {
+  display: flex;
+  flex-direction: column;
+}
+.content__right img {
+  width: 100%;
 }
 .content .name {
-  margin-top: 215px;
+  /* margin-top: 215px; */
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
@@ -159,7 +178,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 290px;
+  bottom: 0;
   width: 141px;
   height: 42px;
   padding-bottom: 30px;
