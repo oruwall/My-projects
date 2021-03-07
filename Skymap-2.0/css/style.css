@@ -84,10 +84,14 @@ body {
 }
 .header__link a {
   text-decoration: none;
-  font-weight: 600;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  color: #170805;
+}
+.header__link .active {
+  font-weight: 600;
 }
 .header_bar {
   background-color: #448b6d;
@@ -95,7 +99,7 @@ body {
 }
 .content {
   position: relative;
-  background: url("../img/background.png") top right 0 / 56% no-repeat;
+  background: url("../img/nice-cup.png") top right 0 / 56% no-repeat;
 }
 .content .name {
   margin-top: 215px;
@@ -119,7 +123,6 @@ body {
   font-weight: 300;
   font-size: 34px;
   line-height: 60px;
-  letter-spacing: -0.005em;
   text-transform: uppercase;
   color: #170805;
 }
@@ -189,7 +192,7 @@ body {
   margin-top: 50px;
 }
 .about-us_1 .right {
-  padding-right: 170px;
+  padding-right: 99px;
   margin-left: 100px;
 }
 .about-us_2 .left {
