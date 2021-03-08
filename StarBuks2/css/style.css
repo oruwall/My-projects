@@ -102,8 +102,10 @@ body {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 100px;
 }
 .left {
+  position: relative;
   flex-basis: 45%;
   box-sizing: border-box;
   left: 0;
@@ -113,26 +115,26 @@ body {
   flex-direction: column;
 }
 .up-title {
+  margin-top: 80px;
   font-weight: 300;
+  margin-bottom: 30px;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.12em;
   color: #4f403f;
 }
 .title {
-  margin-top: 41px;
+  margin-bottom: 20px;
   font-weight: 800;
   font-size: 56px;
-  line-height: 60px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #170805;
 }
 .subtitle {
-  margin-top: 41px;
   font-weight: 300;
   font-size: 34px;
-  line-height: 60px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: #170805;
 }
@@ -142,13 +144,12 @@ body {
   align-items: center;
   width: 276px;
   height: 60px;
-  margin-top: 30px;
   text-decoration: none;
+  border: 2px solid #448b6d;
   background: #448b6d;
   border-radius: 10px;
   font-weight: bold;
   font-size: 18px;
-  line-height: 22px;
   color: #ffffff;
   transition: all 0.2s ease;
 }
@@ -157,6 +158,17 @@ body {
   background: transparent;
   color: #448b6d;
   transition: all 0.2s ease;
+}
+.scroll {
+  display: flex;
+  align-items: center;
+}
+.scroll-text {
+  margin-left: 12px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #170805;
 }
 
 .right {
@@ -186,3 +198,51 @@ body {
   margin-left: 13%;
 }
 /* / Section-1 */
+
+/* Section-2 */
+.section-2 {
+  padding-bottom: 100px;
+  background: url("../img/big-logo.png") right center / 35% no-repeat;
+  background-color: #fff;
+}
+.about-us {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ab-left {
+  padding-top: 100px;
+  position: relative;
+  flex-basis: 50%;
+  box-sizing: border-box;
+  left: 0;
+}
+.ab-right {
+  padding-top: 100px;
+  position: relative;
+  flex-basis: 50%;
+  box-sizing: border-box;
+  right: 0;
+  padding-left: 100px;
+}
+.ab-right img {
+  margin-left: -90px;
+  border-radius: 15px;
+}
+.ab-right .title,
+.ab-left .title {
+  font-size: 40px;
+}
+.ab-left .text,
+.ab-right .text {
+  font-size: 18px;
+  line-height: 34px;
+  color: #170805;
+}
+.ab-right .btn {
+  width: 253px;
+  margin-top: 30px;
+}
+
+/* / Section-2 */
