@@ -226,14 +226,13 @@ body {
 /* Section-2 */
 .section-2 {
   width: 100%;
-
+  padding-bottom: 100px;
   background: url("../img/big-logo.png") right center / 35% no-repeat;
   background-color: #fff;
 }
-.section-2 .container {
+/* .section-2 .container {
   background-color: #fff;
-  padding-bottom: 100px;
-}
+} */
 .about-us {
   width: 100%;
   position: relative;
@@ -759,6 +758,9 @@ body {
     padding: 0;
     padding-top: 70px;
   }
+  .section-2 .container {
+    background-color: #fff;
+  }
 }
 @media screen and (max-width: 411px) {
   .content {
@@ -780,6 +782,9 @@ body {
     padding: 0;
     padding-top: 70px;
   }
+  .section-2 .container {
+    background-color: #fff;
+  }
 }
 @media screen and (max-width: 376px) {
   .content {
@@ -800,5 +805,8 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 70px;
+  }
+  .section-2 .container {
+    background-color: #fff;
   }
 }
