@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick.css"> 
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e81e5104-251c-4b79-be5e-921edf1f9646&lang=ru_RU" type="text/javascript"> 
+	</script> 
     <title>StarBucks</title>
 </head>
 <body>
@@ -27,19 +29,19 @@
                                 <a href="#">Home</a>
                             </li>
                             <li class="header__link">
-                                <a href="#">About us</a>
+                                <a href="#about-us">About us</a>
                             </li>
                             <li class="header__link">
-                                <a href="#">Menu</a>
+                                <a href="#menu">Menu</a>
                             </li>
                             <li class="header__link">
-                                <a href="#">Map</a>
+                                <a href="#map">Map</a>
                             </li>
-                            <li class="header__link">
+                            <li class="trash">
                                 <a href="#">
-                                <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.71342 8.17652C2.73185 7.94681 2.83614 7.73247 3.0055 7.57618C3.17487 7.4199 3.39688 7.33314 3.62733 7.33319H16.3727C16.6031 7.33314 16.8251 7.4199 16.9945 7.57618C17.1639 7.73247 17.2681 7.94681 17.2866 8.17652L18.0905 18.1865C18.1107 18.4388 18.0785 18.6925 17.9959 18.9317C17.9133 19.1709 17.7821 19.3904 17.6104 19.5764C17.4388 19.7624 17.2306 19.9109 16.9988 20.0124C16.767 20.114 16.5167 20.1664 16.2636 20.1665H3.73642C3.48335 20.1664 3.23303 20.114 3.00123 20.0124C2.76943 19.9109 2.56117 19.7624 2.38956 19.5764C2.21794 19.3904 2.08669 19.1709 2.00408 18.9317C1.92146 18.6925 1.88926 18.4388 1.9095 18.1865L2.7125 8.17652H2.71342Z" stroke="#170805" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.6666 10.0832V5.49986C13.6666 4.5274 13.2803 3.59477 12.5927 2.90713C11.9051 2.2195 10.9724 1.83319 9.99998 1.83319C9.02752 1.83319 8.09489 2.2195 7.40725 2.90713C6.71962 3.59477 6.33331 4.5274 6.33331 5.49986V10.0832" stroke="#170805" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.71342 8.17652C2.73185 7.94681 2.83614 7.73247 3.0055 7.57618C3.17487 7.4199 3.39688 7.33314 3.62733 7.33319H16.3727C16.6031 7.33314 16.8251 7.4199 16.9945 7.57618C17.1639 7.73247 17.2681 7.94681 17.2866 8.17652L18.0905 18.1865C18.1107 18.4388 18.0785 18.6925 17.9959 18.9317C17.9133 19.1709 17.7821 19.3904 17.6104 19.5764C17.4388 19.7624 17.2306 19.9109 16.9988 20.0124C16.767 20.114 16.5167 20.1664 16.2636 20.1665H3.73642C3.48335 20.1664 3.23303 20.114 3.00123 20.0124C2.76943 19.9109 2.56117 19.7624 2.38956 19.5764C2.21794 19.3904 2.08669 19.1709 2.00408 18.9317C1.92146 18.6925 1.88926 18.4388 1.9095 18.1865L2.7125 8.17652H2.71342Z" stroke="#170805" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.6666 10.0832V5.49986C13.6666 4.5274 13.2803 3.59477 12.5927 2.90713C11.9051 2.2195 10.9724 1.83319 9.99998 1.83319C9.02752 1.83319 8.09489 2.2195 7.40725 2.90713C6.71962 3.59477 6.33331 4.5274 6.33331 5.49986V10.0832" stroke="#170805" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </a>
                             </li>
@@ -48,7 +50,7 @@
                 </div>
             </div>
         </header>
-        <div class="section-1">
+        <section class="section-1">
             <div class="container">
                 <div class="content">
                     <div class="left">
@@ -61,7 +63,7 @@
                         <h2 class="subtitle">
                             best coffee in the world
                         </h2>
-                        <a href="#" class="btn">
+                        <a href="#map" class="btn">
                             See Nearest Location
                         </a>
                     </div>
@@ -83,10 +85,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-2">
+        </section>
+        <section class="section-2">
             <div class="container">
-                <div class="about-us">
+                <div class="about-us" id="about-us">
                     <div class="ab-left">
                         <img src="./img/about-us_1.png" alt="about-us/img">
                     </div>
@@ -97,7 +99,7 @@
                         <p class="text">
                             Our coffee masters have distilled their years of<br> tasting knowledge down. It’s surprising how<br> different brewing methods can enhance particular<br> characteristics in your coffee. Let us help you unlock<br> the full potential of your coffee.
                         </p>
-                        <a href="#" class="btn">
+                        <a href="#menu" class="btn">
                             Browse our coffees
                         </a>
                     </div>
@@ -114,21 +116,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section-3">
+        </section>
+        <section class="section-3">
             <div class="container">
-                <div class="menu">
+                <div class="menu" id="menu">
                     <h1 class="title">
                         Menu
                     </h1>
                 </div>
             </div>
-        </div>
-        <div class="section-4">
+        </section>
+        <section class="section-4">
             <div class="container">
                 <div class="ice-blended">
                     <div class="description">
-                        <a href="#">
+                        <a href="#" class="d-arrow">
                             <svg width="21" height="17" viewBox="0 0 23 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M23 9.5L2 9.5M2 9.5L10.5 1M2 9.5L10.5 18" stroke="#170805" stroke-opacity="0.8" stroke-width="2"/>
                             </svg>
@@ -136,7 +138,7 @@
                         <h1 class="title">
                             Ice blended
                         </h1>
-                        <a href="#">
+                        <a href="#" class="dots">
                             <img src="./img/dots.png" alt="ice-dots">
                         </a>
                     </div>
@@ -188,7 +190,23 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="section-5">
+            <div class="container">
+                <div class="menu">
+                    <h1 class="title">
+                        Check us on map
+                    </h1>
+                </div>
+            </div>
+        </section>
+        <section class="section-6">
+            <div class="container">
+                <div class="map-block">
+                    <div class="map" id="map"></div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
