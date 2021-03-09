@@ -9,6 +9,9 @@
 	};
 }());
 
+let scene = document.getElementById('scene');
+let parallaxInstance = new Parallax(scene);
+
 $('.content2').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -36,24 +39,6 @@ $('.content2').slick({
       }
     ]
   });
-  
-
-    //   // Функция ymaps.ready() будет вызвана, когда
-    // // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
-    // ymaps.ready(init);
-    // function init(){
-    //     // Создание карты.
-    //     var myMap = new ymaps.Map("map", {
-    //         // Координаты центра карты.
-    //         // Порядок по умолчанию: «широта, долгота».
-    //         // Чтобы не определять координаты центра карты вручную,
-    //         // воспользуйтесь инструментом Определение координат.
-    //         center: [55.76, 37.64],
-    //         // Уровень масштабирования. Допустимые значения:
-    //         // от 0 (весь мир) до 19.
-    //         zoom: 7
-    //     });
-    // }
 
     // function init() {
     //     var myMap = new ymaps.Map('map', {
@@ -79,31 +64,45 @@ $('.content2').slick({
     
     // ymaps.ready(init);
 
-    var location = ymaps.geolocation;
-var myMap = new ymaps.Map('map', {
-    center: [55.76, 37.64],
-    zoom: 10
-}, {
-    searchControlProvider: 'yandex#search'
-});
+   
+    ymaps.ready(init);
 
-// Получение местоположения и автоматическое отображение его на карте.
-location.get({
+function init() {
+    var geolocation = ymaps.geolocation,
+        myMap = new ymaps.Map('map', {
+            center: [55, 34],
+            zoom: 13,
+            controls: []
+        }, {
+            searchControlProvider: 'yandex#search'
+        });
+    var searchControl = new ymaps.control.SearchControl({
+        options: {
+            provider: 'yandex#search'
+          }
+      });
+      myMap.controls.add(searchControl);
+      searchControl.search('Starbucks');
+
+    geolocation.get({
+        provider: 'yandex',
         mapStateAutoApply: true
-    })
-.then(
-    function(result) {
-        // Получение местоположения пользователя.
-        var userAddress = result.geoObjects.get(0).properties.get('text');
-        var userCoodinates = result.geoObjects.get(0).geometry.getCoordinates();
-        // Пропишем полученный адрес в балуне.
+    }).then(function (result) {
+        // Красным цветом пометим положение, вычисленное через ip.
+        result.geoObjects.options.set('preset', 'islands#redCircleIcon');
         result.geoObjects.get(0).properties.set({
-            balloonContentBody: 'Адрес: ' + userAddress +
-                                '<br/>Координаты:' + userCoodinates
+            balloonContentBody: 'Мое местоположение'
+        });
+        myMap.geoObjects.add(result.geoObjects);
     });
-        myMap.geoObjects.add(result.geoObjects)
-    },
-    function(err) {
-        console.log('Ошибка: ' + err)
-    }
-)
+
+    geolocation.get({
+        provider: 'browser',
+        mapStateAutoApply: true
+    }).then(function (result) {
+        // Синим цветом пометим положение, полученное через браузер.
+        // Если браузер не поддерживает эту функциональность, метка не будет добавлена на карту.
+        result.geoObjects.options.set('preset', 'islands#blueCircleIcon');
+        myMap.geoObjects.add(result.geoObjects);
+    });
+}

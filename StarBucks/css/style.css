@@ -257,30 +257,6 @@ html {
   padding-left: 60px;
   cursor: pointer;
 }
-/* .content {
-  display: flex;
-  justify-content: center;
-}
-.cont {
-  position: relative;
-  width: 317px;
-  height: 607px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-}
-.cont.active {
-  background: #e8e5d4;
-  border-radius: 15px;
-  color: #170805;
-  margin-left: 100px;
-  margin-right: 100px;
-}
-.cont.active .name {
-  color: #170805;
-} */
 
 .content {
   display: flex;
