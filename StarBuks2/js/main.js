@@ -31,18 +31,23 @@ $('.content2').slick({
         breakpoint: 768,
         settings: {
           arrows: false,
+          prevArrow: false,
+          nextArrow: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
+          arrows: false
         }
       },
       {
         breakpoint: 480,
         settings: {
           arrows: false,
+          prevArrow: false,
+          nextArrow: false,
           centerMode: true,
           centerPadding: '40px',
-          slidesToShow: 1
+          slidesToShow: 1,
         }
       }
     ]
