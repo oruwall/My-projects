@@ -201,11 +201,13 @@ body {
 
 /* Section-2 */
 .section-2 {
+  width: 100%;
   padding-bottom: 100px;
   background: url("../img/big-logo.png") right center / 35% no-repeat;
   background-color: #fff;
 }
 .about-us {
+  width: 100%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -233,6 +235,7 @@ body {
 .ab-right .title,
 .ab-left .title {
   font-size: 40px;
+  text-transform: none;
 }
 .ab-left .text,
 .ab-right .text {
@@ -246,3 +249,140 @@ body {
 }
 
 /* / Section-2 */
+
+/* Section-3 */
+
+.menu .title {
+  padding: 0;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 40px;
+  text-transform: none;
+}
+
+/* / Section-3 */
+
+/* Section-4 */
+.section-4 {
+  background-color: #fff;
+}
+.ice-blended {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.description .title {
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+  text-transform: none;
+  padding-right: 33px;
+  padding-left: 15px;
+}
+.content2 {
+  position: relative;
+  display: flex;
+  padding-top: 60px;
+}
+.content2 .cont {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 317px;
+  height: 607px;
+  outline: none;
+  transition: all 0.4s ease;
+}
+.content2 .cont img {
+  width: 172px;
+  height: 325px;
+}
+.content2 .slick-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 317px;
+  height: 607px;
+  background: #e8e5d4;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  outline: none;
+}
+.content2 .slick-center img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  transform: scale(1.2);
+  transition: all 0.5s ease;
+}
+.new {
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 51px;
+  height: 21px;
+  background: #20a86f;
+  border-radius: 5px;
+  top: 0;
+  left: 14px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.content2 .slick-center .new {
+  display: flex;
+}
+.cont .name {
+  margin-top: 20px;
+  width: 212px;
+  height: 48px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #4f403f;
+}
+.slick-center .name {
+  color: rgba(23, 8, 5, 1);
+}
+.cont .price {
+  margin-top: 16px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+.content2 .slick-center .btn {
+  display: flex;
+}
+.cont .btn {
+  display: none;
+  width: 170px;
+  height: 50px;
+  margin-top: 14px;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+}
+.arrow_next {
+  right: 0;
+}
+/* / Section-4 */
