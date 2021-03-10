@@ -66,7 +66,7 @@ function init() {
         myMap = new ymaps.Map('map', {
             center: [55, 34],
             zoom: 13,
-            controls: []
+            controls: ['geolocationControl']
         }, {
             searchControlProvider: 'yandex#search'
         });
