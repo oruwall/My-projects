@@ -531,9 +531,45 @@ body {
   background-color: #170805;
   color: rgba(232, 229, 212, 0.85);
   padding-bottom: 20px;
+  margin-top: -1px;
+  z-index: 2;
 }
 /* / End */
-
+@media screen and (max-width: 1441px) {
+  .container {
+    width: 75%;
+  }
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left {
+    z-index: 1;
+  }
+  .backcup {
+    display: block;
+    margin-top: 30%;
+    margin-right: -10%;
+    z-index: -10;
+  }
+  .right.cup {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+  .cup {
+    margin-top: -54%;
+    margin-left: 13%;
+    z-index: -10;
+  }
+  .scroll {
+    display: none;
+  }
+  .ab-right br {
+    display: none;
+  }
+}
 @media screen and (max-width: 1250px) {
 }
 @media screen and (max-width: 1199px) {
@@ -683,6 +719,27 @@ body {
   .arrow_prev {
     display: none;
   }
+  .content2 .cont {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 217px;
+    height: 507px;
+    outline: none;
+    transition: all 0.4s ease;
+  }
+  .content2 .cont img {
+    width: 132px;
+    height: 245px;
+  }
+  .content2 .slick-center img {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+  }
   .footer__body {
     display: flex;
     justify-content: center;
@@ -697,167 +754,3 @@ body {
     height: 400px;
   }
 }
-/* @media screen and (max-width: 411px) {
-  .header {
-    z-index: 1000;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    top: -90px;
-  }
-  .left {
-    width: 100%;
-    flex-basis: 0;
-    z-index: 1;
-  }
-  .backcup {
-    width: 80%;
-    display: block;
-    margin-top: 40%;
-    margin-right: 9%;
-    z-index: -10;
-  }
-  .right {
-    width: 100%;
-    flex-basis: 0;
-  }
-  .right.cup {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-  .cup {
-    width: 80%;
-    margin-top: -35%;
-    margin-left: 10%;
-    z-index: -10;
-  }
-  .scroll {
-    display: none;
-  }
-  .about-us {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
-  br {
-    display: none;
-  }
-  .ab-right,
-  .ab-left {
-    margin: 0;
-    padding: 0;
-    padding-top: 70px;
-  }
-  .ab-right .btn {
-    margin: 15px auto;
-  }
-  .ab-right img {
-    margin: 0;
-  }
-  .section-2 .container {
-    background-color: #fff;
-  }
-  .arrow_next {
-    display: none;
-  }
-  .arrow_prev {
-    display: none;
-  }
-  .footer__body {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-main__list {
-    display: none;
-  }
-  .footer__list-last {
-    display: none;
-  }
-}
-@media screen and (max-width: 376px) {
-  .header {
-    z-index: 1000;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    top: -90px;
-  }
-  .left {
-    width: 100%;
-    flex-basis: 0;
-    z-index: 1;
-  }
-  .backcup {
-    width: 80%;
-    display: block;
-    margin-top: 40%;
-    margin-right: 9%;
-    z-index: -10;
-  }
-  .right {
-    width: 100%;
-    flex-basis: 0;
-  }
-  .right.cup {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-  }
-  .cup {
-    width: 80%;
-    margin-top: -35%;
-    margin-left: 10%;
-    z-index: -10;
-  }
-  .scroll {
-    display: none;
-  }
-  .about-us {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-  }
-  br {
-    display: none;
-  }
-  .ab-right,
-  .ab-left {
-    margin: 0;
-    padding: 0;
-    padding-top: 70px;
-  }
-  .ab-right .btn {
-    margin: 15px auto;
-  }
-  .ab-right img {
-    margin: 0;
-  }
-  .section-2 .container {
-    background-color: #fff;
-  }
-  .arrow_next {
-    display: none;
-  }
-  .arrow_prev {
-    display: none;
-  }
-  .footer__body {
-    display: flex;
-    justify-content: center;
-  }
-  .footer-main__list {
-    display: none;
-  }
-  .footer__list-last {
-    display: none;
-  }
-} */
