@@ -16,6 +16,13 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('.header__link').click(function(event) {
+      $('.header__burgher,.header__menu').removeClass('active');
+      $('body').removeClass('lock');
+  });
+});
+
 let scene = document.getElementById('scene');
 let parallaxInstance = new Parallax(scene);
 
