@@ -35,7 +35,7 @@ $('.content2').slick({
     nextArrow: '.arrow_next',
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1025,
         settings: {
           arrows: false,
           prevArrow: false,
