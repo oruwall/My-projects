@@ -61,10 +61,7 @@ a {
     border-bottom: 1px solid #A33787;
     transition: all 0.23s ease;
 }
-.nav__link.active a {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #A33787;
-}
+
 
 .header {
 	background: #211F20;
@@ -125,7 +122,7 @@ a {
 
 .desktop {
     margin-top: 114px;
-    margin-right: -50px;
+    margin-right: -25px;
 }
 
 
