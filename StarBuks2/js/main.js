@@ -30,9 +30,12 @@ let parallaxInstance = new Parallax(scene);
 $('.content2').slick({
     centerMode: true,
     centerPadding: '60px',
-    slidesToShow: 3,
     prevArrow: '.arrow_prev',
     nextArrow: '.arrow_next',
+    swipeToSlide: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1025,

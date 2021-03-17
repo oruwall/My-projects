@@ -421,6 +421,13 @@ body {
 .arrow_next {
   right: 0;
 }
+
+.cont-1 {
+  margin-top: -100px;
+}
+.cont-2 {
+  margin-top: 100px;
+}
 /* / Section-4 */
 
 /* Section-6 */
