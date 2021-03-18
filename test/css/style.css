@@ -38,8 +38,6 @@ form .form-row .input-data {
   margin: 0 30px 0 0;
   position: relative;
 }
-form .form-row .textarea {
-}
 form .form-message .input-data {
   width: 776px;
   margin: 60px 0 112px 0 !important;
@@ -110,44 +108,33 @@ form .form-message .input-data {
 .textarea textarea:valid ~ .underline:before {
   transform: scale(1);
 }
-.textarea {
+.form-message {
   display: flex;
-  flex-direction: column;
 }
-.submit-btn .input-data {
-  overflow: hidden;
-  height: 45px !important;
-  width: 25% !important;
-}
-.submit-btn .input-data .inner {
-  height: 100%;
-  width: 300%;
-  position: absolute;
-  left: -100%;
-  background: -webkit-linear-gradient(
-    right,
-    #56d8e4,
-    #9f01ea,
-    #56d8e4,
-    #9f01ea
-  );
-  transition: all 0.4s;
-}
-.submit-btn .input-data:hover .inner {
-  left: 0;
-}
-.submit-btn .input-data input {
-  background: none;
+/* .btn input {
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  z-index: -2;
+} */
+.btn input {
+  margin-top: 135px;
+  margin-left: 35px;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
   border: none;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
+  box-shadow: 0px 5px 20px rgba(137, 79, 166, 0.5);
+  background: url("../arrow-footer.png"),
+    linear-gradient(180.92deg, #bb5ca0 1.59%, #7d4ca8 98.41%);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  transition: 0.2s ease;
 }
+.btn input:hover {
+  box-shadow: none;
+}
+
 @media (max-width: 700px) {
   .container .text {
     font-size: 30px;
