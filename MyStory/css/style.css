@@ -500,6 +500,12 @@ a {
     margin: 0;
     margin-bottom: 30px;
   }
+  .story-img {
+    margin-top: 60px;
+    width: 100%;
+    filter: drop-shadow(5px 0px 20px rgba(56, 154, 244, 0.3))
+      drop-shadow(-5px 0px 20px rgba(133, 120, 213, 0.45));
+  }
   .staff {
     width: 100%;
   }
