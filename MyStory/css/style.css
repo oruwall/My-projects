@@ -206,16 +206,10 @@ a {
 }
 
 .card__content {
-  height: 111px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
+  padding: 30px 33px;
 }
 .card__text {
-  width: 212px;
   font-size: 16px;
-  line-height: 134.4%;
   color: #dcbcd4;
 }
 .card__text span {
@@ -352,6 +346,88 @@ a {
     width: calc(100% / 6 * 4.95);
   }
 }
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 992px;
+  }
+  .header {
+    padding-bottom: 0;
+  }
+  .offer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro {
+    text-align: center;
+  }
+  .footages {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .showcase-wrapper {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+    margin: 0px 10px;
+  }
+  .card__content {
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .popular-title {
+    margin-bottom: 50px;
+    margin-left: 10px;
+  }
+  .title-wrapper {
+    margin-left: 0;
+  }
+  .my-story {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .story-text {
+    width: 100%;
+  }
+  .story-img {
+    margin-top: 60px;
+    width: 100%;
+    filter: drop-shadow(10px 0px 80px rgba(56, 154, 244, 0.3))
+      drop-shadow(-10px 0px 80px rgba(133, 120, 213, 0.45));
+  }
+  .staff-wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .staff:nth-child(3) {
+    margin-top: 30px;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery a {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .gallery a:nth-child(4) {
+    margin-top: 0;
+  }
+  .gallery a:nth-child(6) {
+    margin-top: 0;
+  }
+}
 /* 768px - 992px */
 @media screen and (max-width: 992px) {
   .container {
@@ -371,13 +447,6 @@ a {
     width: 549px;
     margin: 72px auto 0;
   }
-  .skills {
-    flex-direction: column;
-  }
-  .skill {
-    width: auto;
-    margin-bottom: 30px;
-  }
 }
 
 /* 576px - 768px */
@@ -395,6 +464,24 @@ a {
     margin-left: 0;
     margin-top: 15px;
     width: 100%;
+  }
+  .offer {
+    text-align: center;
+  }
+  .cards {
+    align-items: stretch;
+  }
+  .card__text {
+    font-size: 15px;
+  }
+  .staff-wrapper {
+    justify-content: center;
+  }
+  .staff {
+    margin: 0px 0 30px 0;
+  }
+  .about-staff {
+    margin-top: -30px;
   }
 }
 
