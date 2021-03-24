@@ -161,7 +161,6 @@ a {
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .btn:hover {
@@ -360,8 +359,7 @@ a {
 /* === / OUR-GALLERY === */
 
 /* === CONTACT === */
-.contact {
-}
+
 .contact-wrapper {
   margin-top: -50px;
   position: relative;
@@ -697,5 +695,21 @@ a {
   }
   .gallery a > img {
     width: 100%;
+  }
+  .left-contact-title {
+    margin-top: 100px;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact__paragraph {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
   }
 }
