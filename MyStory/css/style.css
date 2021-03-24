@@ -758,7 +758,7 @@ a {
     position: fixed;
     top: -100%;
     right: 0;
-    width: auto;
+    width: 40%;
     height: auto;
     overflow: auto;
     border-bottom-left-radius: 15px;
