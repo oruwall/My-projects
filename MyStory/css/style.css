@@ -160,6 +160,8 @@ a {
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .btn:hover {
@@ -356,6 +358,82 @@ a {
   transition: 0.4s ease;
 }
 /* === / OUR-GALLERY === */
+
+/* === CONTACT === */
+.contact {
+}
+.contact-wrapper {
+  margin-top: -50px;
+  position: relative;
+  padding-bottom: 250px;
+  background: url("../img/Contact-us.png") no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.left-contact-title {
+  margin-top: 168px;
+  line-height: 124.9%;
+}
+.contact__paragraph {
+  margin-top: 38px;
+  width: 443px;
+  font-size: 16px;
+  line-height: 142%;
+  color: #ffffff;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 180px;
+  margin-right: -30px;
+}
+.form {
+  width: 275px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  color: #dcbcd4;
+  margin-bottom: 47px;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #dcbcd4;
+}
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: #dcbcd4;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+/* === / CONTACT === */
 
 /*Responsive*/
 
