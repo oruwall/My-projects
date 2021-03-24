@@ -497,6 +497,21 @@ a {
     flex-direction: column;
   }
   .card {
+    margin: 0;
     margin-bottom: 30px;
+  }
+  .staff {
+    width: 100%;
+  }
+  .staff img {
+    width: 100%;
+  }
+  .gallery {
+    width: 100%;
+    display: flex;
+    align-content: center;
+  }
+  .gallery a > img {
+    width: 100%;
   }
 }
