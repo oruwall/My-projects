@@ -66,6 +66,25 @@ a {
 
 /* === / COMMON === */
 
+/* Header burger */
+
+.header__burgher {
+  display: none;
+}
+.header__burgher.active span {
+  transform: scale(0);
+}
+.header__burgher.active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.header__burgher.active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+/* Header burger */
+
 /* === HEADER === */
 .head {
   display: flex;
@@ -493,8 +512,65 @@ a {
   .header {
     padding-top: 20px;
   }
+  .header__burgher {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burgher span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burgher::before,
+  .header__burgher::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0%;
+    transition: all 0.5s ease 0s;
+  }
+  .header__burgher::before {
+    top: 0;
+  }
+  .header__burgher::after {
+    bottom: 0;
+  }
   .nav {
-    display: none;
+    position: fixed;
+    top: -100%;
+    right: 0;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border-bottom-left-radius: 15px;
+    background: #211f20;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 70px 10px 20px 20px;
+    transition: all 0.5s ease 0s;
+  }
+  .nav.active {
+    top: 0;
+  }
+  .nav__list {
+    display: block;
+  }
+  .nav__list li {
+    margin: 20px 0px 20px 0px;
+  }
+  .nav__link a {
+    color: #fff;
+    font-size: 16px;
   }
   .offer {
     margin-top: 30px;
