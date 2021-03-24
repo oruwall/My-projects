@@ -499,6 +499,12 @@ a {
   .offer {
     margin-top: 30px;
   }
+  .intro {
+    margin-bottom: 5px;
+  }
+  .desktop {
+    margin-top: 30px;
+  }
   .cards {
     flex-direction: column;
   }
