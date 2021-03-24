@@ -433,6 +433,131 @@ a {
 
 /* === / CONTACT === */
 
+/* === FOOTER === */
+.footer {
+  background: #0e0e10;
+}
+.footer-wrapper {
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list li {
+  margin-bottom: 14px;
+}
+.subscribe__title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 149.4%;
+  color: #dcbcd4;
+  margin-bottom: 13px;
+}
+.email-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.email-btn input {
+  margin-left: 30px;
+  border-radius: 100px;
+  width: 48px;
+  height: 48px;
+  border: none;
+  box-shadow: 0px 5px 20px rgba(137, 79, 166, 0.5);
+  background: url("../img/arrow-footer.png"),
+    linear-gradient(134.58deg, #7737a0 15.99%, #a03789 83.5%);
+  background-repeat: no-repeat, repeat;
+  background-position: center;
+  transition: 0.2s ease;
+}
+.email-btn input:hover {
+  box-shadow: none;
+}
+.footer-border {
+  padding-top: 50px;
+  border-bottom: 1px solid #dcbcd4;
+}
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.media-wrapper a {
+  margin: 0 7px;
+}
+.instagram:hover {
+  border-radius: 100%;
+  background: linear-gradient(
+    0deg,
+    #e09b3d 0.29%,
+    #c74c4d 29.97%,
+    #c21975 59.65%,
+    #7024c4 99.22%
+  );
+  stroke: #fff;
+}
+.youtube:hover {
+  border-radius: 100%;
+  background: #f61c0d;
+  stroke: #fff;
+}
+.facebook:hover {
+  border-radius: 100%;
+  background: #4867aa;
+  stroke: #fff;
+}
+.twitter:hover {
+  border-radius: 100%;
+  background: #41abe1;
+  stroke: #fff;
+}
+.credits {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #dcbcd4;
+  align-items: center;
+}
+.rights {
+  margin-left: 120px;
+}
+.phone-and-btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.phone {
+  margin-right: 35px;
+}
+.sicoras-btn {
+  padding: 10px 16px;
+  border: 1px solid #dcbcd4;
+  border-radius: 100px;
+  color: #dcbcd4;
+}
+.sicoras-btn:hover {
+  color: #fff;
+  background: linear-gradient(134.58deg, #7737a0 15.99%, #a03789 83.5%);
+}
+.best {
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.founders {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: rgba(220, 225, 231, 0.1);
+}
+/* === / FOOTER === */
+
 /*Responsive*/
 
 /* 992px - 1200px */
