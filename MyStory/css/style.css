@@ -14,7 +14,7 @@ body {
   padding: 0;
   margin: 0;
   /* overflow-x: hidden; */
-  background: #211f20;
+  background: linear-gradient(168.47deg, #211f20 0%, #252023 87.22%);
 }
 html {
   scroll-behavior: smooth;
@@ -110,7 +110,6 @@ a {
 }
 
 .header {
-  background: #211f20;
   padding-top: 52px;
   color: #fff;
   padding-bottom: 110px;
@@ -145,7 +144,8 @@ a {
   width: 400px;
 }
 
-.btn {
+.btn,
+.btn2 {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(94.72deg, #7138a4 6.45%, #a63786 98.54%);
   box-shadow: 0px 6px 30px rgba(139, 55, 149, 0.35);
@@ -163,7 +163,8 @@ a {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn,
+.btn2:hover {
   box-shadow: none;
 }
 
@@ -437,6 +438,10 @@ a {
 .footer {
   background: #0e0e10;
 }
+.footer .container {
+  background: url("../img/footer-elipse.png") no-repeat;
+  background-position: left bottom;
+}
 .footer-wrapper {
   padding-top: 110px;
   display: flex;
@@ -461,7 +466,7 @@ a {
   display: flex;
   flex-wrap: wrap;
 }
-.email-btn input {
+.first-btn {
   margin-left: 30px;
   border-radius: 100px;
   width: 48px;
@@ -474,7 +479,7 @@ a {
   background-position: center;
   transition: 0.2s ease;
 }
-.email-btn input:hover {
+.first-btn:hover {
   box-shadow: none;
 }
 .footer-border {
@@ -524,7 +529,7 @@ a {
   align-items: center;
 }
 .rights {
-  margin-left: 120px;
+  margin-left: 125px;
 }
 .phone-and-btn {
   display: flex;
@@ -555,6 +560,9 @@ a {
   line-height: 17px;
   text-align: center;
   color: rgba(220, 225, 231, 0.1);
+}
+.btn2 {
+  display: none;
 }
 /* === / FOOTER === */
 
@@ -836,5 +844,56 @@ a {
     margin-top: 30px;
     display: flex;
     align-items: center;
+  }
+  .contact-wrapper {
+    padding-bottom: 100px;
+  }
+  .footer-wrapper {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav-1,
+  .footer-nav-2,
+  .footer-logo {
+    display: none;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-btn {
+    display: none;
+  }
+  .btn2 {
+    display: block;
+    width: 100%;
+    padding: 5px 50px;
+    background: transparent;
+    border: 1px solid #dcbcd4;
+    box-shadow: none;
+    color: #dcbcd4;
+  }
+  .credits {
+    flex-direction: column;
+  }
+  .designer {
+    margin-bottom: 10px;
+  }
+  .rights {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .phone-and-btn {
+    margin-bottom: 45px;
+  }
+  .phone {
+    margin-right: 14px;
   }
 }
