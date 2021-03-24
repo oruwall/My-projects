@@ -490,4 +490,13 @@ a {
   .container {
     width: 90%;
   }
+  .nav {
+    display: none;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    margin-bottom: 30px;
+  }
 }
