@@ -565,6 +565,13 @@ a {
 .btn2 {
   display: none;
 }
+.my-insta {
+  color: rgba(220, 225, 231, 0.1);
+}
+.my-insta:hover {
+  color: #7024c4;
+  border-bottom: 2px solid #7024c4;
+}
 /* === / FOOTER === */
 
 /*Responsive*/
