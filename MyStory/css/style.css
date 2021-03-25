@@ -683,6 +683,45 @@ a {
     width: 549px;
     margin: 72px auto 0;
   }
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .gallery a {
+    width: 48%;
+  }
+  .gallery img {
+    width: 100%;
+  }
+  .story-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .subscribe {
+    width: 30%;
+  }
+  .first-btn {
+    display: none;
+  }
+  .btn2 {
+    display: block;
+  }
+  .rights {
+    margin: 0 auto;
+  }
+  .phone-and-btn {
+    width: 21%;
+  } /* COME BACK TO IT LATTER */
+  .phone {
+    display: none;
+  }
+  .founders {
+    margin-top: 38px;
+  }
 }
 
 /* 576px - 768px */
@@ -718,6 +757,87 @@ a {
   }
   .about-staff {
     margin-top: -30px;
+  }
+  .story-img {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .left-contact-title {
+    margin-top: 100px;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact__paragraph {
+    width: 100%;
+  }
+  .form-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-wrapper {
+    padding-bottom: 100px;
+  }
+  .form-wrapper {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .contact-wrapper {
+    padding-bottom: 100px;
+  }
+  .footer-wrapper {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-nav-1,
+  .footer-nav-2,
+  .footer-logo {
+    display: none;
+  }
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .first-btn {
+    display: none;
+  }
+  .btn2 {
+    display: block;
+    width: 100%;
+    padding: 5px 50px;
+    background: transparent;
+    border: 1px solid #dcbcd4;
+    box-shadow: none;
+    color: #dcbcd4;
+  }
+  .credits {
+    flex-direction: column;
+  }
+  .designer {
+    margin-bottom: 10px;
+  }
+  .rights {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .phone-and-btn {
+    margin-bottom: 45px;
+  }
+  .phone {
+    margin-right: 14px;
   }
 }
 
@@ -801,6 +921,9 @@ a {
   .cards {
     flex-direction: column;
   }
+  .showcase {
+    margin: 0 auto;
+  }
   .card {
     width: 90%;
     margin: 0;
@@ -838,72 +961,5 @@ a {
   }
   .gallery a > img {
     width: 100%;
-  }
-  .left-contact-title {
-    margin-top: 100px;
-  }
-  .contact-wrapper {
-    flex-direction: column;
-  }
-  .contact__paragraph {
-    width: 100%;
-  }
-  .form-wrapper {
-    width: 100%;
-    margin: 0;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-  }
-  .contact-wrapper {
-    padding-bottom: 100px;
-  }
-  .footer-wrapper {
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  .footer-nav-1,
-  .footer-nav-2,
-  .footer-logo {
-    display: none;
-  }
-  .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .email-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .first-btn {
-    display: none;
-  }
-  .btn2 {
-    display: block;
-    width: 100%;
-    padding: 5px 50px;
-    background: transparent;
-    border: 1px solid #dcbcd4;
-    box-shadow: none;
-    color: #dcbcd4;
-  }
-  .credits {
-    flex-direction: column;
-  }
-  .designer {
-    margin-bottom: 10px;
-  }
-  .rights {
-    margin: 0;
-    margin-bottom: 10px;
-  }
-  .phone-and-btn {
-    margin-bottom: 45px;
-  }
-  .phone {
-    margin-right: 14px;
   }
 }
