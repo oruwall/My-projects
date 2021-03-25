@@ -163,7 +163,7 @@ a {
   cursor: pointer;
 }
 
-.btn,
+.btn:hover,
 .btn2:hover {
   box-shadow: none;
 }
@@ -478,6 +478,7 @@ a {
   background-repeat: no-repeat, repeat;
   background-position: center;
   transition: 0.2s ease;
+  cursor: pointer;
 }
 .first-btn:hover {
   box-shadow: none;
