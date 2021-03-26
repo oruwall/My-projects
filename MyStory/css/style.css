@@ -1117,4 +1117,9 @@ a {
   .gallery a:nth-child(3) {
     margin-top: 0px;
   }
+  .contact-wrapper {
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
 }
