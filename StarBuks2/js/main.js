@@ -27,7 +27,7 @@ let scene = document.getElementById('scene');
 let parallaxInstance = new Parallax(scene);
 
 
-$('.content2').slick({
+$('.multiple-items').slick({
     centerMode: true,
     centerPadding: '60px',
     prevArrow: '.arrow_prev',
@@ -36,31 +36,31 @@ $('.content2').slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          arrows: false,
-          prevArrow: false,
-          nextArrow: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          arrows: false,
-          prevArrow: false,
-          nextArrow: false,
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1,
-        }
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 1025,
+    //     settings: {
+    //       arrows: false,
+    //       prevArrow: false,
+    //       nextArrow: false,
+    //       centerMode: true,
+    //       centerPadding: '40px',
+    //       slidesToShow: 1,
+    //       arrows: false
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       arrows: false,
+    //       prevArrow: false,
+    //       nextArrow: false,
+    //       centerMode: true,
+    //       centerPadding: '40px',
+    //       slidesToShow: 1,
+    //     }
+    //   }
+    // ]
   });
     ymaps.ready(init);
 
