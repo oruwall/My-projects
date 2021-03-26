@@ -799,14 +799,25 @@ a {
   }
   .offer {
     width: 100%;
+    display: flex;
+    align-items: center;
   }
   .intro {
     width: auto;
+    text-align: center;
   }
   .desktop {
     display: block;
     width: 549px;
     margin: 72px auto 0;
+  }
+  .about-us {
+    padding-top: 80px;
+  }
+  .story-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
   }
   .gallery {
     display: flex;
@@ -821,41 +832,32 @@ a {
   .gallery img {
     width: 100%;
   }
-  .story-img {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 50px;
+  .gallery a:nth-child(2) {
+    margin-top: -80px;
+  }
+  .gallery a:nth-child(3) {
+    margin-top: -80px;
+  }
+  .gallery a:nth-child(4) {
+    margin-top: 0px;
+    order: -1;
+  }
+  .gallery a:nth-child(5) {
+    margin-top: 0px;
+    order: 0;
+  }
+  .gallery a:nth-child(6) {
+    margin-top: 0px;
+    order: -1;
+  }
+  .contact__paragraph {
+    width: 85%;
+  }
+  .form-wrapper {
+    margin-top: 135px;
   }
   .subscribe {
     width: 30%;
-  }
-  .first-btn {
-    display: none;
-  }
-  .btn2 {
-    display: block;
-  }
-  .rights {
-    margin: 0 auto;
-  }
-  .phone-and-btn {
-    width: 21%;
-  } /* COME BACK TO IT LATTER */
-  .phone {
-    display: none;
-  }
-  .founders {
-    margin-top: 38px;
-  }
-  .btn2 {
-    display: block;
-    width: 100%;
-    padding: 5px 50px;
-    background: transparent;
-    border: 1px solid #dcbcd4;
-    box-shadow: none;
-    color: #dcbcd4;
-    margin-top: 40px;
   }
 }
 
@@ -896,6 +898,12 @@ a {
   .story-img {
     margin: 0 auto;
     width: 90%;
+  }
+  .gallery a:nth-child(2) {
+    margin-top: -60px;
+  }
+  .gallery a:nth-child(3) {
+    margin-top: -60px;
   }
   .left-contact-title {
     margin-top: 100px;
@@ -1071,6 +1079,11 @@ a {
     filter: drop-shadow(5px 0px 20px rgba(56, 154, 244, 0.3))
       drop-shadow(-5px 0px 20px rgba(133, 120, 213, 0.45));
   }
+  .staff-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .staff {
     width: 80%;
   }
@@ -1097,5 +1110,11 @@ a {
   }
   .gallery a {
     width: 100%;
+  }
+  .gallery a:nth-child(2) {
+    margin-top: 0px;
+  }
+  .gallery a:nth-child(3) {
+    margin-top: 0px;
   }
 }
