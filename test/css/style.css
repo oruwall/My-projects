@@ -35,7 +35,7 @@ body {
   align-items: center;
 }
 .showcase-wrapper {
-  width: 930px;
+  width: 1000px;
 }
 .title-wrapper {
   margin-top: 80px;
@@ -64,14 +64,17 @@ body {
 }
 .card-3 {
   margin-top: 80px;
+  margin-bottom: 25px;
 }
 .card {
   width: 284px;
-  height: 316px;
+  height: 314px;
   background: #2b2a42;
   box-shadow: 0px 6px 20px #1b1b1d;
   border-radius: 10px;
-  margin-right: 35px;
+  /* margin-right: 35px; */
+  margin-right: 17.5px;
+  margin-left: 17.5px;
 }
 .card__img {
   display: block;
@@ -91,6 +94,78 @@ body {
 .card__text span {
   font-weight: 700;
 }
+.arrows {
+  display: flex;
+}
+.arrow {
+  transform: scale(1.1);
+  margin: 0 10px;
+}
+.my-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.my-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.my-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+  outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+  opacity: 1;
+}
+
+.my-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg");
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}
 
 @media (max-width: 767px) {
   .wrapper {
@@ -98,17 +173,12 @@ body {
   }
 }
 
-/* ÐžÑÐ½Ð¾Ð²Ð½Ñ‹Ðµ ÑÑ‚Ð¸Ð»Ð¸ */
-
-/* Ð¡Ð»Ð°Ð¹Ð´ÐµÑ€ */
 .slick-slider {
   min-width: 0;
 }
-/* ÐžÐ³Ñ€Ð°Ð½Ð¸Ñ‡Ð¸Ð²Ð°ÑŽÑ‰Ð°Ñ Ð¾Ð±Ð¾Ð»Ð¾Ñ‡ÐºÐ° */
 .slick-list {
   overflow: hidden;
 }
-/* Ð›ÐµÐ½Ñ‚Ð° ÑÐ»Ð°Ð¹Ð´Ð¾Ð² */
 .slick-track {
   display: flex;
   align-items: flex-start;
