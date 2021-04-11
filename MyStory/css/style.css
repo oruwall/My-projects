@@ -250,6 +250,7 @@ a {
   justify-content: space-between;
 }
 .story-img {
+  width: 100%;
   filter: drop-shadow(50px -40px 50px rgba(56, 154, 244, 0.3))
     drop-shadow(-50px 45px 50px rgba(133, 120, 213, 0.45));
 }
@@ -593,7 +594,11 @@ a {
     width: 70%;
     margin-top: 50px;
   }
+  .showcase-wrapper {
+    width: 870px;
+  }
   .story-img {
+    width: 50%;
     margin-left: 70px;
   }
   .our-gallery {
