@@ -372,3 +372,18 @@ body {
 }
 
 /* / section-3 */
+
+#section-4 {
+  background-color: #fdfdfd;
+}
+
+.world {
+  margin-top: 155px;
+  margin-bottom: 30px;
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
