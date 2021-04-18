@@ -192,8 +192,8 @@ body {
 /* section-2 */
 
 #section-2 {
-  padding-bottom: 100px;
   margin-top: 100px;
+  padding-bottom: 130px;
 }
 
 #section-2 .contentWrapper {
@@ -231,9 +231,144 @@ body {
   align-items: center;
   margin-top: 15px;
 }
+
 #section-2 .textContent .done p {
   font-size: 14px;
   line-height: 30px;
   color: #4f5665;
   margin: 0px 0 0 10px;
 }
+
+/* / section-2 */
+
+/* section-3 */
+
+#section-3 {
+  background-color: #fbfbfb;
+  padding-bottom: 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 550px;
+  margin: 0 auto;
+}
+
+.title h3 {
+  margin-top: 80px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0b132a;
+}
+
+.title p {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  width: 330px;
+}
+
+.plan.active {
+  border: 2px solid #f53838;
+}
+
+.plan-image {
+  padding: 80px 0 30px 0;
+}
+
+.plan h5 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #0b132a;
+}
+
+.plan-cheked {
+  margin-top: 30px;
+}
+
+.cheked {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cheked p {
+  margin-left: 20px;
+}
+
+.free-plan .plan-price {
+  margin-top: 120px;
+}
+
+.standart-plan .plan-price {
+  margin-top: 90px;
+}
+
+.premium-plan .plan-price {
+  margin-top: 50px;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #0b132a;
+  margin-bottom: 33px;
+}
+
+.plan-btn {
+  margin-bottom: 60px;
+}
+
+.plan-btn a {
+  border: 2px solid #f53838;
+  border-radius: 50px;
+  padding: 13px 63px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f53838;
+  transition: all 0.23s ease;
+}
+
+.plan-btn a:hover {
+  background: #f53838;
+  color: #fff;
+  transition: all 0.23s ease;
+}
+
+.plan-btn.active a {
+  box-shadow: 0px 17px 54px rgba(245, 56, 56, 0.35);
+  background: #f53838;
+  color: #fff;
+}
+
+.plan-btn.active a:hover {
+  box-shadow: none;
+}
+
+/* / section-3 */
