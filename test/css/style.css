@@ -1,4 +1,3 @@
-/*ÐžÐ±Ð½ÑƒÐ»ÐµÐ½Ð¸Ðµ*/
 *,
 *:before,
 *:after {
@@ -7,179 +6,183 @@
   border: 0;
   box-sizing: border-box;
 }
-/*Ð¡Ñ‚Ð¸Ð»Ð¸ Ð´Ð»Ñ Ð´ÐµÐ¼Ð¾Ð½ÑÑ‚Ñ€Ð°Ñ†Ð¸Ð¸*/
+
 html,
 body {
   height: 100%;
   background-color: #333;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-size: 25px;
 }
+
 .wrapper {
   height: 100%;
   padding: 50px;
+  width: 1440px;
+  margin: 0 auto;
+}
+
+/* flex container */
+/* .flex {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.slider {
-}
-.slider__item {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.footages {
-  display: flex;
-  align-items: center;
-}
-.showcase-wrapper {
-  width: 1000px;
-}
-.title-wrapper {
-  margin-top: 80px;
-  height: 141px;
-  width: 246px;
-  margin-left: 10px;
-}
-.micro-title {
-  font-size: 13px;
-  line-height: 91.9%;
-  color: #a33787;
-  margin-bottom: 23px;
-}
-.title-wrapper .title {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 118.4%;
-  margin-bottom: 25px;
-  color: #fff;
-}
-.cards {
-  display: flex;
-}
-.card-2 {
-  margin-top: 40px;
-}
-.card-3 {
-  margin-top: 80px;
-  margin-bottom: 25px;
-}
-.card {
-  width: 284px;
-  height: 314px;
-  background: #2b2a42;
-  box-shadow: 0px 6px 20px #1b1b1d;
-  border-radius: 10px;
-  /* margin-right: 35px; */
-  margin-right: 17.5px;
-  margin-left: 17.5px;
-}
-.card__img {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+} */
 
-.card__content {
-  padding: 30px 33px;
-}
-.card__text {
-  font-size: 16px;
-  color: #dcbcd4;
-}
-.card__text span {
-  font-weight: 700;
-}
-.arrows {
-  display: flex;
-}
-.arrow {
-  transform: scale(1.1);
-  margin: 0 10px;
-}
-.my-dots {
-  position: absolute;
-  bottom: -45px;
-  display: block;
-  width: 100%;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-
-.my-dots li {
-  position: relative;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.my-dots li button {
-  font-size: 0;
-  line-height: 0;
-  display: block;
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-  cursor: pointer;
-  color: transparent;
-  border: 0;
-  outline: none;
-  background: transparent;
-}
-
-.my-dots li button:hover,
-.my-dots li button:focus {
-  outline: none;
-}
-
-.my-dots li button:hover:before,
-.my-dots li button:focus:before {
-  opacity: 1;
-}
-
-.my-dots li button:before {
-  font-family: "slick";
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg");
-  text-align: center;
-  opacity: 0.25;
-  color: black;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.my-dots li.slick-active button:before {
-  opacity: 0.75;
-  color: black;
-}
-
-@media (max-width: 767px) {
-  .wrapper {
-    padding: 50px 10px;
-  }
-}
-
-.slick-slider {
+/* флекс элемент*/
+/* .flex__column {
   min-width: 0;
-}
+} */
+
+/* slider */
+/* .slider {
+  min-width: 0;
+} */
+
 .slick-list {
   overflow: hidden;
 }
+
 .slick-track {
   display: flex;
-  align-items: flex-start;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: center;
+  margin: 0 25px;
+}
+
+.slider {
+  position: relative;
+  width: 1300px;
+}
+
+.slider .slick-arrow.slick-prev {
+  right: 7%;
+  background: url("../arrow.svg") 0 0 no-repeat;
+  background-size: 30px;
+  background-position: center;
+  transition: all 0.23s ease;
+}
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url("../arrow.svg") 0 0 no-repeat;
+  transform: rotate(180deg);
+  background-size: 30px;
+  background-position: center;
+  transition: all 0.23s ease;
+}
+
+.slider .slick-arrow.slick-next:hover,
+.slider .slick-arrow.slick-prev:hover {
+  background: url("../arrow-hover-copy.svg") 0 0 no-repeat;
+  background-size: 30px;
+  background-position: center;
+  background-color: #f53838;
+  transition: all 0.23s ease;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 115%;
+  z-index: 10;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #f53838;
+  border-radius: 50px;
+}
+
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 15px;
+}
+.slider .slick-dots button {
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  background-color: #dde0e4;
+  border-radius: 50px;
+  transition: all 0.23s ease;
+}
+.slider .slick-dots li.slick-active button {
+  background-color: #f53838;
+  width: 45px;
+  height: 15px;
+  transition: all 0.23s ease;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.slide-wrapper {
+  width: 340px;
+  margin: 30px;
+}
+
+.slide {
+  background: #ffffff;
+  border: 2px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 25px;
+}
+
+.slide.active {
+  border: 2px solid #f53838;
+  box-shadow: 0px 70px 114px rgba(13, 16, 37, 0.06);
+}
+
+.slide-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.costumer-info {
+  display: flex;
+  align-items: center;
+}
+
+.costumer {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.costumer h6 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #0b132a;
+  margin-bottom: 5px;
+}
+
+.costumer p {
+  font-weight: normal;
+  font-size: 14px;
+  color: #4f5665;
+}
+
+.comment {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #0b132a;
+}
+
+.raiting {
+  display: flex;
+  align-items: center;
+}
+
+.raiting p {
+  margin-right: 10px;
 }
