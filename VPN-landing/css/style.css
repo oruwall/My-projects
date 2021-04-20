@@ -560,6 +560,7 @@ body {
 /* Subscribe */
 
 .subscribe {
+  position: relative;
   margin-bottom: -125px;
 }
 
@@ -596,7 +597,6 @@ body {
 /* / Subscribe */
 
 footer {
-  z-index: -1;
   background: #f8f8f8;
 }
 
@@ -611,6 +611,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 340px;
+  z-index: 1000;
 }
 
 .share p {
