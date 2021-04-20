@@ -14,7 +14,7 @@ body {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* nav */
@@ -397,7 +397,10 @@ body {
 
 #section-5 {
   background-color: #fdfdfd;
-  padding-bottom: 100px;
+}
+
+.container .slider {
+  overflow: hidden;
 }
 
 .slick-list {
@@ -426,6 +429,7 @@ body {
   height: 60px;
   border: 2px solid #f53838;
   border-radius: 50px;
+  outline: none;
 }
 
 .slider .slick-arrow.slick-prev {
@@ -472,6 +476,7 @@ body {
   border-radius: 50px;
   border: none;
   transition: all 0.23s ease;
+  outline: none;
 }
 .slider .slick-dots li.slick-active button {
   background-color: #f53838;
@@ -500,7 +505,7 @@ body {
   border-radius: 10px;
 }
 
-.slide.active {
+.slider__item.slick-slide.slick-current.slick-active .slide {
   border: 2px solid #f53838;
   box-shadow: 0px 70px 114px rgba(13, 16, 37, 0.06);
 }
@@ -552,7 +557,46 @@ body {
 
 /* / section-5 */
 
+/* Subscribe */
+
+.subscribe {
+  margin-bottom: -125px;
+}
+
+.subscribeWrapper {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.sub-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 59px 70px;
+}
+
+.sub-btn {
+  margin: 0;
+}
+
+.subtitle h2 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  color: #0b132a;
+}
+
+.subtitle p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4f5665;
+}
+
+/* / Subscribe */
+
 footer {
+  z-index: -1;
   background: #f8f8f8;
 }
 
