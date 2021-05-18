@@ -1,3 +1,11 @@
+/* Font family: 
+
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poiret One', cursive;
+
+*/
+
 /* === COMMON === */
 *,
 *:before,
@@ -8,6 +16,7 @@
   box-sizing: border-box;
   position: relative;
 }
+
 body {
   font-family: "Lato", sans-serif;
   padding: 0;
@@ -57,8 +66,6 @@ a {
 #button {
   position: relative;
   background: #151413;
-  /* width: 267px; */
-  /* height: 58px; */
 }
 
 #borderRight {
@@ -67,7 +74,6 @@ a {
   top: 22px;
   right: 208px;
   bottom: 0;
-  /* left: 0; */
 }
 
 #borderBottom {
@@ -211,7 +217,7 @@ a {
 .header {
   padding-top: 24px;
   color: #fff;
-  padding-bottom: 110px;
+  padding-bottom: 150px;
 }
 
 .wrapper {
@@ -281,3 +287,206 @@ a {
 }
 
 /* === / HEADER === */
+
+/* ==== Praise ==== */
+
+.praise {
+  background-color: #fff;
+}
+
+.title-left {
+  font-family: "Poiret One", cursive;
+  font-size: 40px;
+  line-height: 100%;
+  color: #262328;
+
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.triggers {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 115px;
+}
+
+.triggers:last-child {
+  margin-right: 47px;
+}
+
+.triger {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #262328;
+  width: 172px;
+  height: 131px;
+  text-align: center;
+}
+
+.triger h2 {
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: #262328;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
+.triger legend {
+  display: table;
+  position: relative;
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+  color: #262328;
+  background-color: #fff;
+  margin-top: -10px;
+}
+
+fieldset:nth-child(1) legend {
+  margin-right: -56px;
+}
+
+fieldset:nth-child(2) legend {
+  margin-right: -73px;
+}
+
+fieldset:nth-child(3) legend {
+  margin-right: -90px;
+}
+
+fieldset:nth-child(4) legend {
+  margin-right: -56px;
+}
+/* ==== / Praise ==== */
+
+/* === Our-work === */
+
+.our-work {
+  background-color: #fff;
+  padding-bottom: 400px;
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-work-image {
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.left-work-image::after {
+  content: url("../img/ourWork/bordersvg.svg");
+  bottom: -25px;
+  right: 30px;
+  position: absolute;
+}
+
+.left-work-image p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  position: absolute;
+  right: 100px;
+  bottom: 17px;
+}
+
+.left-work-image p span {
+  color: #dea616;
+}
+
+.left-work-noslide {
+  width: 490px;
+  height: 343px;
+  background: #151413;
+  border-left: 3px solid #dea616;
+  position: relative;
+}
+
+.left-work-noslide::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  height: 3px;
+  width: 10px;
+  background-color: #dea616;
+}
+
+.left-work-text {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-work-text h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 136%;
+  margin-bottom: 61px;
+}
+
+.left-work-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136%;
+  margin-bottom: 52px;
+}
+
+.left-work-text a {
+  align-self: flex-end;
+  margin-right: -3px;
+}
+
+.right-work {
+  border-top: 1px solid #dea616;
+  width: 758px;
+}
+
+.right-work-noslide {
+  margin-bottom: 52px;
+}
+
+.right-work-noslide h2 {
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: #151413;
+
+  margin-top: 27px;
+  margin-bottom: 116px;
+}
+
+.right-work-noslide p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136%;
+
+  color: #151413;
+}
+
+.right-work-image {
+  position: relative;
+  z-index: 2;
+}
+
+.right-work-image-border::after {
+  content: "";
+  position: absolute;
+  border: 3px solid #dea616;
+  width: 719px;
+  height: 350px;
+  left: -22px;
+  bottom: -34px;
+  z-index: -1;
+}
+
+/* === / Our-work === */
