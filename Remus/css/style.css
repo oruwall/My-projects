@@ -363,7 +363,7 @@ fieldset:nth-child(4) legend {
 
 .our-work {
   background-color: #fff;
-  padding-bottom: 400px;
+  padding-bottom: 125px;
 }
 
 .work {
@@ -490,3 +490,86 @@ fieldset:nth-child(4) legend {
 }
 
 /* === / Our-work === */
+
+/* === Catalog === */
+
+.catalog {
+  padding-bottom: 400px;
+}
+
+.title-catalog {
+  color: #ffffff;
+}
+
+.title-catalog span {
+  color: #dea616;
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.one-item .second-item {
+  margin-left: 35px;
+}
+
+.two-items {
+  position: relative;
+}
+
+.two-items .first-item {
+  margin-bottom: 35px;
+}
+
+.two-items .first-item .catalog-item-bottom,
+.two-items .second-item .catalog-item-bottom {
+  width: 442px;
+  height: 50px;
+}
+
+.one-item .first-item .catalog-item-bottom,
+.one-item .second-item .catalog-item-bottom {
+  width: 394px;
+  height: 50px;
+}
+
+.two-items .first-item .catalog-item-bottom,
+.two-items .second-item .catalog-item-bottom,
+.one-item .first-item .catalog-item-bottom,
+.one-item .second-item .catalog-item-bottom {
+  position: absolute;
+  bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 33px;
+  background: rgba(20, 19, 21, 0.5);
+  backdrop-filter: blur(6px);
+}
+
+.two-items .first-item .catalog-item-bottom h3,
+.two-items .second-item .catalog-item-bottom h3,
+.one-item .first-item .catalog-item-bottom h3,
+.one-item .second-item .catalog-item-bottom h3 {
+  font-family: "Poiret One", cursive;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  color: #ffffff;
+}
+
+.two-items .first-item .catalog-item-bottom img,
+.two-items .second-item .catalog-item-bottom img,
+.one-item .first-item .catalog-item-bottom img,
+.one-item .second-item .catalog-item-bottom img {
+  width: 22px;
+  height: 17px;
+}
+
+/* === / Catalog === */
