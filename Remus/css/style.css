@@ -302,6 +302,7 @@ a {
 
 .title-left {
   font-family: "KoHo", sans-serif;
+  font-weight: 200;
   font-size: 40px;
   line-height: 100%;
   color: #262328;
@@ -501,7 +502,7 @@ fieldset:nth-child(4) legend {
 /* === Catalog === */
 
 .catalog {
-  padding-bottom: 400px;
+  padding-bottom: 100px;
 }
 
 .title-catalog {
@@ -581,3 +582,214 @@ fieldset:nth-child(4) legend {
 }
 
 /* === / Catalog === */
+
+/* === Contact === */
+
+.contact {
+  background-color: #fff;
+  padding-bottom: 400px;
+}
+
+.title-contact {
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-wrapper {
+  width: 781px;
+  height: 310px;
+  border: 3px solid rgba(38, 35, 40, 0.8);
+}
+
+.contact-right {
+  margin-top: -80px;
+}
+
+.form-contact {
+  font-family: "KoHo", sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 23px;
+  margin-bottom: 10px;
+
+  color: #000000;
+}
+
+.form-contact-under {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+
+  color: #141315;
+}
+
+.left-contact-title {
+  margin-top: 168px;
+  line-height: 124.9%;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 150px;
+  padding-top: 10px;
+}
+.form {
+  width: 270px;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  color: #262328;
+  margin-bottom: 10px;
+}
+
+.form input {
+  width: 100%;
+  height: 100%;
+  color: #262328;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.form label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid #262328;
+}
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 13px;
+  color: #262328;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+.sumbit-btn-wrapper {
+  width: 162px;
+  height: 46px;
+  border: 3px solid #dea616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.submit-btn input {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #dea616;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  width: 162px;
+  height: 46px;
+  outline: none;
+}
+
+.submit-borderRight {
+  border-right: 3px solid #fff;
+  position: absolute;
+  top: 22px;
+  right: -3px;
+  bottom: 0;
+}
+
+.submit-borderBottom {
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  right: -3px;
+  bottom: -3px;
+  width: 56px;
+}
+
+.sumbit-btn-wrapper:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+.sumbit-btn-wrapper:after {
+  z-index: 3;
+  top: 3px;
+  right: -3px;
+  border-right: 3px solid #dea616;
+  border-bottom: 3px solid #dea616;
+  transition: 0s ease opacity 0.4s, 0.2s ease width, 0.2s ease height 0.2s;
+}
+
+.sumbit-btn-wrapper:hover:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.sumbit-btn-wrapper:hover:after {
+  transition: 0s ease opacity 0s, 0.2s ease height, 0.3s ease width 0.2s;
+}
+
+.contact-button {
+  display: flex;
+}
+
+.care {
+  display: flex;
+  align-self: flex-end;
+  margin-left: 77px;
+}
+
+.care h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(38, 35, 40, 0.49);
+}
+
+.contact-borderLeft {
+  border-right: 3px solid #fff;
+  position: absolute;
+  top: 144px;
+  left: 0px;
+  bottom: 0;
+}
+
+.contact-borderBottom {
+  border-bottom: 3px solid #fff;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 156px;
+}
+
+.contact-img {
+  background: url(../img/contact/house.png) no-repeat center center fixed;
+  background-size: cover;
+  z-index: 19;
+}
+
+/* === / Contact === */
