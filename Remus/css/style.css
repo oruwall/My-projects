@@ -586,8 +586,10 @@ fieldset:nth-child(4) legend {
 /* === Contact === */
 
 .contact {
+  background: url(../img/contact/house.png) no-repeat bottom;
+  background-size: contain;
   background-color: #fff;
-  padding-bottom: 400px;
+  padding-bottom: 476px;
 }
 
 .title-contact {
@@ -775,21 +777,21 @@ fieldset:nth-child(4) legend {
   position: absolute;
   top: 144px;
   left: 0px;
-  bottom: 0;
+  bottom: 13px;
 }
 
 .contact-borderBottom {
   border-bottom: 3px solid #fff;
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: 13px;
   width: 156px;
 }
 
-.contact-img {
+/* .contact-img {
   background: url(../img/contact/house.png) no-repeat center center fixed;
   background-size: cover;
   z-index: 19;
-}
+} */
 
 /* === / Contact === */
