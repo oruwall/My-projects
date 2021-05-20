@@ -788,10 +788,86 @@ fieldset:nth-child(4) legend {
   width: 156px;
 }
 
-/* .contact-img {
-  background: url(../img/contact/house.png) no-repeat center center fixed;
-  background-size: cover;
-  z-index: 19;
-} */
-
 /* === / Contact === */
+
+/* === Order === */
+
+.order {
+  padding-bottom: 100px;
+}
+
+.order-wrapper {
+  display: flex;
+}
+
+.order-image-1 {
+  position: relative;
+}
+
+.order-image-1::after {
+  content: url("../img/common/no-border-left.png");
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.order-image-1 h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  position: absolute;
+  color: #fff;
+  bottom: 38px;
+  left: 30px;
+  font-size: 15px;
+  line-height: 136%;
+}
+
+.order-right {
+  margin-left: 135px;
+  border-top: 1px solid rgba(222, 166, 22, 0.26);
+  width: 376px;
+}
+
+.title-order {
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 31px;
+}
+
+.order-right-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 136%;
+  color: #ffffff;
+
+  padding-bottom: 81px;
+}
+
+.order-right-paragraph span {
+  color: #dea616;
+}
+
+.order-describe {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.order-describe h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 136%;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 13px;
+}
+
+.order-describe .order-active h4 {
+  color: #dea616;
+}
+
+.order-describe:hover h4 {
+  color: #dea616;
+}
+
+/* === / Order === */
