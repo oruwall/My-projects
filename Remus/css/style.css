@@ -862,12 +862,21 @@ fieldset:nth-child(4) legend {
   margin-right: 13px;
 }
 
-.order-describe .order-active h4 {
+.order-describe:hover h4 {
+  color: #dea616;
+  cursor: pointer;
+}
+
+.order-describe.active h4 {
   color: #dea616;
 }
 
-.order-describe:hover h4 {
-  color: #dea616;
+.order-images {
+  display: none;
+}
+
+.order-images.active {
+  display: block;
 }
 
 /* === / Order === */
