@@ -277,7 +277,7 @@ a {
   content: "";
   position: absolute;
   right: 0;
-  bottom: -22px;
+  bottom: -21px;
   width: 0px;
   height: 25px;
   border: 2px solid#151413;
@@ -286,11 +286,11 @@ a {
 .back-top::after {
   content: "";
   position: absolute;
-  right: 0;
-  top: -596px;
+  right: 0px;
+  top: -597px;
   width: 0px;
   height: 14px;
-  border: 2px solid #151413;
+  border: 3px solid #151413;
 }
 
 /* === / HEADER === */
