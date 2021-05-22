@@ -12,6 +12,23 @@ $(document).ready(function () {
   });
 });
 
+//! Top Slider
+
+$(document).ready(function () {
+  $(".slider").slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    dots: true,
+  });
+});
+
 //! Tabs
 
 const tabsBtn = document.querySelectorAll(".order-describe");
