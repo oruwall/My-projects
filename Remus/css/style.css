@@ -189,12 +189,6 @@ a {
   color: #dea616;
 }
 
-/* .nav__list .active a {
-  padding-bottom: 16px;
-  border-bottom: 1px solid #dea616;
-  color: #dea616;
-} */
-
 .navline:after {
   content: "";
   position: absolute;
@@ -501,10 +495,6 @@ fieldset:nth-child(4) legend {
 /* === / Our-work === */
 
 /* === Catalog === */
-
-.catalog {
-  /* padding-bottom: 100px; */
-}
 
 .title-catalog {
   color: #ffffff;
@@ -873,12 +863,48 @@ fieldset:nth-child(4) legend {
   color: #dea616;
 }
 
+.order-left {
+  position: relative;
+  width: 560px;
+  height: 740px;
+}
+
 .order-images {
-  display: none;
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 
 .order-images.active {
-  display: block;
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
 }
 
 /* === / Order === */
+
+/* Footer */
+
+footer {
+  padding: 100px 0;
+}
+
+footer .nav__link:hover a {
+  padding: 0;
+  border: none;
+}
+
+footer .navline:after {
+  display: none;
+}
+
+footer .phone p {
+  color: #fff;
+}
+
+/* / Footer  */
