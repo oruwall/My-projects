@@ -1001,6 +1001,7 @@ fieldset:nth-child(4) legend {
 
 footer {
   padding: 100px 0;
+  background-color: #000;
 }
 
 footer .nav__link:hover a {
