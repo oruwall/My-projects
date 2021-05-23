@@ -897,6 +897,10 @@ fieldset:nth-child(4) legend {
   display: flex;
 }
 
+.order-checkers {
+  width: 203px;
+}
+
 .order-image-1 {
   position: relative;
 }
