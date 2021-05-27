@@ -1,3 +1,5 @@
+//! Anchors on top
+
 $(document).ready(function () {
   $(".header__burgher").click(function (event) {
     $(".header__burgher, .nav").toggleClass("active");
@@ -56,3 +58,23 @@ function onTabClick(item) {
     }
   });
 }
+
+//! Anchor to another page
+
+$(document).ready(function () {
+  if (window.location.hash != "") {
+    // Get the hash value and remove the # from it.
+    var hash = window.location.hash.substr(1);
+    console.log(hash);
+
+    // In the nav-tabs,
+    // find the right tab by targetting the `h4` which contains the word you used has a hash
+    // and click it.
+    $(".catalog-wrapper")
+      .find("../products.html a:constains('" + hash + "')")
+      .click();
+
+    let cry = find("../products.html a:constains('" + hash + "')");
+    console.log(cry);
+  }
+});
