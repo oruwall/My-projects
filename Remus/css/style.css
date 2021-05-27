@@ -205,6 +205,12 @@ a {
   color: #dea616;
 }
 
+.nav__link.active a {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #dea616;
+  color: #dea616;
+}
+
 .navline:after {
   content: "";
   position: absolute;
