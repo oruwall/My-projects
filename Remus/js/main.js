@@ -70,11 +70,15 @@ $(document).ready(function () {
     // In the nav-tabs,
     // find the right tab by targetting the `h4` which contains the word you used has a hash
     // and click it.
-    $(".catalog-wrapper")
-      .find("../products.html a:constains('" + hash + "')")
+    // $(".nav-product")
+    //   .find("a:constains('" + hash + "')")
+    //   .click();
+
+    $(".nav-product")
+      .find("li a:constains('" + scaune + "')")
       .click();
 
-    let cry = find("../products.html a:constains('" + hash + "')");
-    console.log(cry);
+    // let cry = find("a:constains('" + scaune + "')");
+    // console.log(cry);
   }
 });
