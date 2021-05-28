@@ -92,18 +92,18 @@ a {
 }
 
 #borderRight {
-  border-right: 3px solid #151413;
+  border-right: 5px solid #151413;
   position: absolute;
   top: 22px;
-  right: 1px;
+  right: 0px;
   bottom: 0;
 }
 
 #borderBottom {
-  border-bottom: 3px solid #151413;
+  border-bottom: 4px solid #151413;
   position: absolute;
-  left: 196px;
-  right: 0px;
+  /* left: 196px; */
+  right: 2px;
   bottom: 0px;
   width: 75px;
 }
@@ -1078,5 +1078,9 @@ footer .phone p {
 
   .head-image img {
     width: 90%;
+  }
+
+  .intro {
+    width: 400px;
   }
 }
