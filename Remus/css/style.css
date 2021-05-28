@@ -1068,3 +1068,15 @@ footer .phone p {
 }
 
 /* / Footer  */
+
+/* Responsive */
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1200px;
+  }
+
+  .head-image img {
+    width: 90%;
+  }
+}
