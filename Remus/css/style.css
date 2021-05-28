@@ -628,10 +628,6 @@ fieldset:nth-child(4) legend {
   justify-content: space-between;
 }
 
-.one-item .second-item {
-  margin-left: 35px;
-}
-
 .two-items {
   position: relative;
 }
@@ -1082,5 +1078,17 @@ footer .phone p {
 
   .intro {
     width: 400px;
+  }
+
+  .work img {
+    width: 90%;
+  }
+
+  .two-items img {
+    width: 90%;
+  }
+
+  .one-item img {
+    width: 90%;
   }
 }
