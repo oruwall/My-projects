@@ -250,10 +250,6 @@ a {
   align-items: center;
 }
 
-.offer {
-  width: 480px;
-}
-
 .title {
   font-family: "KoHo", sans-serif;
   font-weight: 400;
@@ -562,11 +558,11 @@ fieldset:nth-child(4) legend {
 
 .right-work {
   border-top: 1px solid #dea616;
-  width: 758px;
+  margin-left: 52px;
 }
 
 .right-work-noslide {
-  margin-bottom: 52px;
+  margin-bottom: 55px;
 }
 
 .right-work-noslide h2 {
@@ -898,10 +894,6 @@ fieldset:nth-child(4) legend {
 
 .order-wrapper {
   display: flex;
-}
-
-.order-checkers {
-  width: 203px;
 }
 
 .order-image-1 {
