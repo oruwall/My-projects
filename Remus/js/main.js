@@ -70,12 +70,8 @@ $(document).ready(function () {
     // In the nav-tabs,
     // find the right tab by targetting the `h4` which contains the word you used has a hash
     // and click it.
-    // $(".nav-product")
-    //   .find("a:constains('" + hash + "')")
-    //   .click();
-
     $(".nav-product")
-      .find("li a:constains('" + scaune + "')")
+      .find("a:constains('" + hash + "')")
       .click();
 
     // let cry = find("a:constains('" + scaune + "')");
