@@ -69,8 +69,15 @@ font-family: 'Open Sans', sans-serif; */
   letter-spacing: 0.1em;
   text-decoration: none;
   color: #ffffff;
+  transition: 0.3s ease;
 
   border: 1px solid #fff;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s ease;
 }
 
 .btn.top {
@@ -141,6 +148,11 @@ font-family: 'Open Sans', sans-serif; */
   width: 238px;
   height: 57px;
   align-self: center;
+}
+
+.btn.bottom:hover {
+  color: #fff;
+  background-color: #000;
 }
 
 .footer {
