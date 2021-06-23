@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton", sans-serif;
+}
+
+h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: #1e0700;
+
+  margin-bottom: 19px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+.container {
+  width: 1176px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: url("./header-bg.jpg") no-repeat center top / cover;
+  padding: 370px 0;
+}
+
+.offer {
+  text-align: center;
+}
+
+.offer h1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100px;
+  line-height: 151.2%;
+  letter-spacing: 0.025em;
+  color: #fff;
+
+  margin-bottom: 35px;
+}
+
+.btn {
+  font-family: "Anton", sans-serif;
+  font-size: 17px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  color: #ffffff;
+
+  border: 1px solid #fff;
+}
+
+.btn.top {
+  width: 191.48px;
+  height: 25px;
+
+  padding: 15px 80px;
+}
+
+.about {
+  margin-top: 105px;
+  margin-bottom: 105px;
+}
+
+.about h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 73px;
+  letter-spacing: 0.02em;
+
+  color: #1e0700;
+
+  margin-bottom: 58px;
+}
+
+.content1 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 42px;
+}
+
+.left1 {
+  width: 564px;
+  align-self: flex-end;
+}
+
+.left1 p {
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #1e0700;
+}
+
+.content2 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 84px;
+}
+
+.left2 {
+  display: flex;
+  justify-content: space-between;
+  width: 564px;
+}
+
+.right2 {
+  width: 564px;
+  align-self: flex-end;
+}
+
+.btn.bottom {
+  color: #1e0700;
+  border: 1px solid #000000;
+  padding: 17px 24px;
+  width: 238px;
+  height: 57px;
+  align-self: center;
+}
+
+.footer {
+  background: #1e0700;
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.back {
+  margin-bottom: 50px;
+}
+
+.back::before {
+  content: url("./arrow.png");
+  top: 0px;
+  left: 0;
+}
