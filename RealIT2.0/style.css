@@ -193,9 +193,8 @@ font-family: 'Open Sans', sans-serif; */
     width: 90%;
   }
   .header {
-    padding: 300px 0 350px;
-    padding-top: 310px;
-    padding-bottom: 350px;
+    padding-top: 270px;
+    padding-bottom: 400px;
   }
   .offer h1 {
     font-size: 50px;
