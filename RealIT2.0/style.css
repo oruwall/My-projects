@@ -226,6 +226,10 @@ font-family: 'Open Sans', sans-serif; */
     margin-bottom: 84px;
   }
   .left1,
+  .right2 {
+    text-align: center;
+  }
+  .left1,
   .left2 {
     margin-bottom: 20px;
   }
