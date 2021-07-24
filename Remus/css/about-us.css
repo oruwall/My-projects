@@ -220,11 +220,15 @@
   color: #ffffff;
 }
 
+.founder-img img {
+  filter: drop-shadow(0px 4px 50px rgba(222, 166, 22, 0.5));
+}
+
 .about-founder {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 25px;
+  margin-top: 25px;
   margin-bottom: 100px;
 }
 
@@ -237,6 +241,7 @@
 
   color: #ffffff;
 
+  margin-top: 13px;
   margin-bottom: 38px;
 }
 
