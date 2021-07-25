@@ -248,6 +248,12 @@ a {
   color: #dea616;
 }
 
+.head-f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .nav__list-f {
   display: flex;
 }
@@ -1137,16 +1143,16 @@ footer {
   background-color: #000;
 }
 
-footer .nav__link:hover a {
+footer .nav__link-f:hover a {
   padding: 0;
   border: none;
 }
 
-footer .navline:after {
+footer .navline-f:after {
   display: none;
 }
 
-footer .phone p {
+footer .phone-f p {
   color: #fff;
 }
 
