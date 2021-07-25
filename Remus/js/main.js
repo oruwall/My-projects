@@ -1,4 +1,4 @@
-//! Anchors on top
+//! Burgher
 
 $(document).ready(function () {
   $(".header__burgher").click(function (event) {

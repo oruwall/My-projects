@@ -165,10 +165,12 @@ a {
 .header__burgher.active::before {
   transform: rotate(45deg);
   top: 9px;
+  width: 100%;
 }
 .header__burgher.active::after {
   transform: rotate(-45deg);
   bottom: 9px;
+  width: 100%;
 }
 
 /* Header burger */
@@ -263,6 +265,20 @@ a {
   font-weight: 400;
   font-size: 45px;
   line-height: 56px;
+}
+
+.mobile-responsive-title {
+  display: none;
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 106%;
+  /* or 48px */
+}
+
+.mobile-responsive-title span {
+  color: #dea616;
 }
 
 .intro {
@@ -425,7 +441,7 @@ a {
 .triggers {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 115px;
+  padding-bottom: 80px;
 }
 
 .triggers:last-child {
