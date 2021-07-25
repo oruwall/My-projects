@@ -340,12 +340,143 @@
     border: none;
   }
 
+  .form {
+    width: 90vw;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    color: #262328;
+    margin-bottom: 10px;
+  }
+
   .form-wrapper {
     padding-left: 0;
     padding-top: 0;
+    z-index: 3;
+  }
+
+  .form input:focus + .label-name .content-name,
+  .form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 15px;
+    color: #262328;
   }
 
   .care {
     display: none;
+  }
+
+  .title-contact {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .contact-button {
+    padding-bottom: 50px;
+  }
+
+  .contact-left {
+    background-color: #322e29;
+    width: 100vw;
+    margin-left: -5vw;
+    padding-left: 5vw;
+  }
+
+  .form-contact,
+  .form-contact-under {
+    color: #fff;
+  }
+
+  .email-wrapper {
+    padding-top: 50px;
+  }
+
+  .street-wrapper {
+    padding-bottom: 20px;
+  }
+
+  .contact {
+    background-image: none;
+    padding-bottom: 0;
+  }
+
+  .nav-f {
+    border-top: 1px solid rgba(222, 166, 22, 0.6);
+    border-bottom: 1px solid rgba(222, 166, 22, 0.6);
+
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+
+  .head-f {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav__list-f {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .nav__list-f li {
+    list-style: none;
+    margin: 0 0 16px 0px;
+
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    /* identical to box height, or 15px */
+
+    color: #ffffff;
+  }
+  .nav__link-f a {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    color: #ffffff;
+  }
+  .nav__link-f:hover a {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dea616;
+    transition: all 0.23s ease;
+    color: #dea616;
+  }
+
+  .nav__link-f.active a {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dea616;
+    color: #dea616;
+  }
+
+  .navline-f:after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    left: -308px;
+    right: 0;
+    bottom: 0;
+    width: 913px;
+    border-bottom: 1px solid rgba(222, 166, 22, 0.19);
+  }
+
+  .phone-f {
+    display: flex;
+    align-items: center;
+  }
+
+  .phone-f span {
+    margin-right: 7px;
+  }
+
+  .phone-f p {
+    font-size: 15px;
+    line-height: 100%;
+    color: #fff;
+  }
+
+  footer {
+    padding: 30px 0;
   }
 }
