@@ -498,6 +498,10 @@
     margin-bottom: 25px;
   }
 
+  .right-work-image {
+    display: none;
+  }
+
   .left-work-image {
     margin-bottom: -4px;
   }
