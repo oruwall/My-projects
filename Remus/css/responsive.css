@@ -8,7 +8,7 @@
     padding-bottom: 60px;
   }
 
-  .header::after {
+  .navline::after {
     content: "";
     position: absolute;
     right: 5vw;
@@ -16,6 +16,8 @@
     width: 90vw;
     border-bottom: 1px solid rgba(222, 166, 22, 0.6);
     margin-bottom: 40px;
+
+    z-index: 4;
   }
 
   .header {
@@ -23,10 +25,6 @@
   }
 
   .logo {
-    z-index: 4;
-  }
-
-  .navline::after {
     z-index: 4;
   }
 
@@ -474,4 +472,104 @@
   footer {
     padding: 30px 0;
   }
+
+  /* Responsive for about-us page */
+
+  .arrow-back {
+    padding-bottom: 20px;
+  }
+
+  .our-work {
+    padding-bottom: 50px;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right-work {
+    border: none;
+    margin: 0;
+  }
+
+  .right-work-noslide h2 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .left-work-image {
+    margin-bottom: -4px;
+  }
+
+  .left-work-image img {
+    width: 94vw;
+    margin-left: -2vw;
+  }
+
+  .left-work-image::after {
+    bottom: -22px;
+    right: 5px;
+
+    z-index: 2;
+  }
+
+  .left-work-image p {
+    right: 72px;
+    bottom: 9px;
+  }
+
+  .left-work-noslide {
+    width: 100vw;
+    height: auto;
+    margin-left: -5vw;
+  }
+
+  .left-work-text {
+    padding-left: 15px;
+  }
+
+  .left-work-text h2 {
+    margin-bottom: 25px;
+  }
+
+  .left-work-text p {
+    margin-bottom: 50px;
+  }
+
+  .doing-services {
+    flex-direction: column-reverse;
+  }
+
+  .services-about {
+    margin-bottom: 50px;
+    width: auto;
+  }
+
+  .services-about h2 {
+    margin-bottom: 25px;
+  }
+
+  .services {
+    margin-bottom: 50px;
+  }
+
+  .services h2 {
+    margin-bottom: 25px;
+  }
+
+  .about-founder {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .founder-info {
+    margin-bottom: 50px;
+  }
+
+  .founder-info p {
+    width: auto;
+  }
+
+  /* / Responsive for about-us page */
 }
