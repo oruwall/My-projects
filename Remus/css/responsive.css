@@ -75,7 +75,7 @@
     padding-top: 103px;
     transition: all 0.3s ease 0s;
 
-    z-index: 1;
+    z-index: 2;
   }
   .nav.active {
     top: 0;
@@ -515,7 +515,7 @@
     bottom: -22px;
     right: 5px;
 
-    z-index: 2;
+    z-index: 1;
   }
 
   .left-work-image p {
@@ -527,6 +527,8 @@
     width: 100vw;
     height: auto;
     margin-left: -5vw;
+
+    z-index: 0;
   }
 
   .left-work-text {
