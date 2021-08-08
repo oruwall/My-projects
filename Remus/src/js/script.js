@@ -110,7 +110,7 @@ window.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //! ABOUT JS
+  //! PRODUCT JS
 
   $(document).ready(function () {
     $(".slider-for").slick({
@@ -119,6 +119,18 @@ window.addEventListener("DOMContentLoaded", () => {
       arrows: false,
       fade: true,
       asNavFor: ".slider-nav",
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
     });
     $(".slider-nav").slick({
       slidesToShow: 2,
@@ -128,6 +140,18 @@ window.addEventListener("DOMContentLoaded", () => {
       arrows: false,
       centerMode: false,
       focusOnSelect: true,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          },
+        },
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ],
     });
   });
 });

@@ -51,7 +51,7 @@
 .color {
   margin-right: 20px;
   cursor: pointer;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .color.active {

@@ -637,7 +637,6 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 136%;
-    /* or 20px */
 
     color: #ffffff;
 
@@ -655,4 +654,12 @@
   }
 
   /* / Responsive for products page */
+
+  /* Responsive for product page */
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  /* / Responsive for product page */
 }
