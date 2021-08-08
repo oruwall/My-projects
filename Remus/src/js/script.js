@@ -130,7 +130,7 @@ window.addEventListener("DOMContentLoaded", () => {
       ],
     });
     $(".slider-nav").slick({
-      slidesToShow: 4,
+      slidesToShow: 2,
       slidesToScroll: 1,
       asNavFor: ".slider-for",
       dots: false,
