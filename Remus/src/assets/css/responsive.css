@@ -661,5 +661,18 @@
     flex-direction: column;
   }
 
+  .product1 img {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .product2 img {
+    width: 100%;
+  }
+
+  .product2.slick-slide.slick-current.slick-active {
+    margin-right: 10px !important;
+  }
+
   /* / Responsive for product page */
 }

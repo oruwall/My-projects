@@ -475,6 +475,12 @@
 
   /* Responsive for about-us page */
 
+  .nav__link.active a {
+    padding-bottom: none;
+    border-bottom: none;
+    color: #fff;
+  }
+
   .arrow-back {
     padding-bottom: 20px;
   }
@@ -578,4 +584,95 @@
   }
 
   /* / Responsive for about-us page */
+
+  /* Responsive for products page */
+
+  .header-product {
+    padding-top: 0px;
+  }
+
+  .left-sideBar {
+    display: none;
+  }
+
+  .shop-products {
+    margin: 0 auto;
+  }
+
+  .tabs__content {
+    grid-gap: 20px;
+    grid-template-columns: auto;
+  }
+
+  .works-wrap__item {
+    margin: none;
+    padding: none;
+  }
+
+  .product-info-mobile {
+  }
+
+  .product-desc {
+    background-color: #000;
+    padding: 23px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-desc img {
+    width: 18px;
+    height: 13.91px;
+
+    margin-top: 10px;
+  }
+
+  .product-desc .text {
+  }
+
+  .product-desc h5 {
+    font-family: "Poiret One", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 136%;
+
+    color: #ffffff;
+
+    margin-bottom: 10px;
+  }
+
+  .product-desc p {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 136%;
+
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  /* / Responsive for products page */
+
+  /* Responsive for product page */
+
+  .about-wrapper {
+    flex-direction: column;
+  }
+
+  .product1 img {
+    width: 65%;
+    margin: 0 auto;
+  }
+
+  .product2 img {
+    width: 100%;
+  }
+
+  .product2.slick-slide.slick-current.slick-active {
+    margin-right: 10px !important;
+  }
+
+  /* / Responsive for product page */
 }

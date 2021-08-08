@@ -175,7 +175,7 @@ window.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       $(this).addClass("active").siblings().removeClass("active").closest("section.tabs").find("div.tabs__content").removeClass("active").eq($(this).index()).addClass("active");
     });
-  }); //! ABOUT JS
+  }); //! PRODUCT JS
 
   $(document).ready(function () {
     $(".slider-for").slick({
@@ -183,16 +183,30 @@ window.addEventListener("DOMContentLoaded", () => {
       slidesToScroll: 1,
       arrows: false,
       fade: true,
-      asNavFor: ".slider-nav"
+      asNavFor: ".slider-nav",
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
     });
     $(".slider-nav").slick({
-      slidesToShow: 2,
+      slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: ".slider-for",
       dots: false,
       arrows: false,
       centerMode: false,
-      focusOnSelect: true
+      focusOnSelect: true,
+      responsive: [{
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      }]
     });
   });
 }); //! Burgher

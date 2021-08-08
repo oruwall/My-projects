@@ -127,13 +127,10 @@ window.addEventListener("DOMContentLoaded", () => {
             slidesToScroll: 1,
           },
         },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ],
     });
     $(".slider-nav").slick({
-      slidesToShow: 2,
+      slidesToShow: 4,
       slidesToScroll: 1,
       asNavFor: ".slider-for",
       dots: false,
@@ -148,9 +145,6 @@ window.addEventListener("DOMContentLoaded", () => {
             slidesToScroll: 1,
           },
         },
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
       ],
     });
   });
