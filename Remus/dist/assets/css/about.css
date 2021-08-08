@@ -78,6 +78,10 @@
   border-bottom: 3px solid #151413;
 }
 
+.delivery-mobile-responsive {
+  display: none;
+}
+
 .delivery-free,
 .delivery-fast {
   display: flex;

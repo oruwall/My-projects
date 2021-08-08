@@ -685,5 +685,34 @@
     margin-right: 10px !important;
   }
 
+  .about-wrapper {
+    padding-bottom: 0;
+  }
+
+  .about-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding-bottom: 0;
+  }
+
+  .chose-colors {
+    display: none;
+  }
+
+  .delivery {
+    display: none;
+  }
+
+  .delivery-mobile-responsive {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .sumbit-btn-wrapper.about-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
   /* / Responsive for product page */
 }
