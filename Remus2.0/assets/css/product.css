@@ -92,3 +92,55 @@
 .tabs__content.active {
   display: grid !important; /* по умолчанию показываем нужный блок */
 }
+
+.product-desc {
+  background-color: #000;
+  padding: 23px 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: -4px;
+}
+
+.product-desc img {
+  width: 18px;
+  height: 13.91px;
+
+  margin-top: 10px;
+}
+
+/* .product-desc .text {
+} */
+
+.product-desc h5 {
+  font-family: "Poiret One", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 136%;
+
+  color: #ffffff;
+
+  margin-bottom: 10px;
+}
+
+.product-desc p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 136%;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mini-arrow {
+  display: none;
+}
+
+.normal-arrow img {
+  width: auto;
+  height: auto;
+}
