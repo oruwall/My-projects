@@ -151,6 +151,10 @@
     display: none;
   }
 
+  .responsive-mobile-praise {
+    display: block;
+  }
+
   /* OUTER CONTAINER */
   .tcontainer {
     width: 100%;

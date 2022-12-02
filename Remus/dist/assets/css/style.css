@@ -550,6 +550,11 @@ fieldset:nth-child(3) legend {
 fieldset:nth-child(4) legend {
   margin-right: -62px;
 }
+
+.responsive-mobile-praise {
+  display: none;
+}
+
 /* ==== / Praise ==== */
 
 /* === Our-work === */
