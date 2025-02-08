@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Распределение ролей в Мафии</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: min-content;  /* Начальная ширина главного блока */
+            margin: auto;
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            transition: all 1s ease-in-out;
+            overflow: hidden;
+        }
+        .form-container {
+            width: 100%;
+            transition: all 1s ease-in-out;
+        }
+        .result-wrapper {
+            display: flex;
+            gap: 15px;
+            flex-wrap: nowrap;
+            min-width: 100%;
+            padding-left: 15px;
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+        .result-container {
+            background: #444;
+            padding: 15px;
+            border-radius: 10px;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            min-width: 220px;
+        }
+        /* Отступ только для первой таблицы */
+        .result-container:first-child {
+            margin-left: 30px;
+        }
+        .checkbox-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        /* Исправления для выравнивания галочек с текстом */
+        .checkbox-container label {
+            display: flex;           /* Используем flex для выравнивания по горизонтали */
+            align-items: center;     /* Выравнивание по вертикали */
+            gap: 8px;                /* Меньше расстояния между галочкой и текстом */
+            white-space: nowrap;     /* Запрещаем перенос строк в тексте */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background: #555;
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        input {
+            background: #555;
+            color: #fff;
+        }
+        button {
+            background: #e63946;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #d62839;
+        }
+    </style>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        async function distributeRoles() {
+            let container = document.querySelector(".container");
+            let resultWrapper = document.getElementById("result-wrapper");
+            resultWrapper.innerHTML = "";
+            resultWrapper.style.opacity = "0";
+
+            let playersCount = parseInt(document.getElementById("players").value);
+            let mafiaCount = parseInt(document.getElementById("mafia").value);
+            let includeManiac = document.getElementById("maniac").checked;
+            let includeDon = document.getElementById("don").checked;
+            let includeDoctor = document.getElementById("doctor").checked;
+            let customRoles = document.getElementById("customRoles").value.split(',').map(r => r.trim()).filter(r => r);
+
+            let roles = [];
+            if (includeDon) roles.push("Дон мафии");
+            for (let i = 0; i < mafiaCount; i++) roles.push("Мафия");
+            roles.push("Шериф");
+            if (includeDoctor) roles.push("Доктор");
+            if (includeManiac) roles.push("Маньяк");
+            roles = roles.concat(customRoles);
+            while (roles.length < playersCount) roles.push("Мирный житель");
+            roles.sort(() => Math.random() - 0.5);
+
+            let columns = Math.ceil(playersCount / 10);
+            let newWidth = Math.min(300 + columns * 250, window.innerWidth - 20); // Расширяем ширину
+            let newHeight = Math.min(200 + Math.min(playersCount, 10) * 35, window.innerHeight - 40);
+
+            // Устанавливаем ширину контейнера
+            container.style.maxWidth = `${newWidth}px`;
+            container.style.height = `${newHeight}px`;
+
+            await sleep(500);
+            resultWrapper.style.opacity = "1";
+
+            for (let c = 0; c < columns; c++) {
+                let resultContainer = document.createElement("div");
+                resultContainer.classList.add("result-container");
+                resultContainer.innerHTML = "<h3>Результаты:</h3><table><tr><th>Игрок</th><th>Роль</th></tr></table>";
+                resultWrapper.appendChild(resultContainer);
+                resultContainer.style.display = "block";
+
+                await sleep(300);
+                resultContainer.style.opacity = "1";
+
+                let table = resultContainer.querySelector("table");
+                for (let i = c * 10; i < Math.min((c + 1) * 10, playersCount); i++) {
+                    let row = document.createElement("tr");
+                    if (i % 2 === 0) row.style.background = "#555";
+                    
+                    let playerCell = document.createElement("td");
+                    playerCell.textContent = `Игрок ${i + 1}`;
+                    let roleCell = document.createElement("td");
+
+                    table.appendChild(row);
+                    row.appendChild(playerCell);
+                    row.appendChild(roleCell);
+
+                    let roleText = roles[i];
+                    roleCell.innerHTML = "";
+                    for (let j = 0; j < roleText.length; j++) {
+                        await sleep(50);
+                        roleCell.innerHTML += roleText[j];
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Распределение ролей в Мафии</h2>
+            <label>Количество игроков: <input type="number" id="players" min="4" value="10"></label><br>
+            <label>Количество мафий (без учета Дона): <input type="number" id="mafia" min="1" value="1"></label><br>
+            <div class="checkbox-container">
+                <label><input type="checkbox" id="don" checked> Включить Дона мафии</label>
+                <label><input type="checkbox" id="doctor" checked> Включить Доктора</label>
+                <label><input type="checkbox" id="maniac"> Включить Маньяка</label>
+            </div>
+            <label>Дополнительные роли (через запятую): <input type="text" id="customRoles"></label><br>
+            <button onclick="distributeRoles()">Распределить роли</button>
+        </div>
+        <div id="result-wrapper" class="result-wrapper"></div>
+    </div>
+</body>
+</html>
